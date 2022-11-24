@@ -14,11 +14,11 @@
     }
 
     // === logo change
-    if (ud_header.classList.contains("sticky")) {
-      logo.src = Logo1;
-    } else {
-      logo.src = Logo;
-    }
+    // if (ud_header.classList.contains("sticky")) {
+    //   logo.src = Logo1;
+    // } else {
+    //   logo.src = Logo;
+    // }
 
     // show or hide the back-top-top button
     const backToTop = document.querySelector(".back-to-top");
