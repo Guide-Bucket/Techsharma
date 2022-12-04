@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block meta %}
+    {% endblock %}
+    {% block CSS %}
+    {% endblock %}
+    {% block body %}
+        <!--====== Start Hero Section ======-->
+        <section class="hero-area">
+            <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(assets/images/bg/breadcrumbs-bg-1.jpg);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="page-title-text text-center">
+                                <h1 class="title">Our Shop</h1>
+                                <ul class="breadcrumbs-link">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active">Shop</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--====== End Hero Section ======-->
+        <!--====== Start Products Section ======-->
+        <section class="products-area pt-130 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="product-sidebar-widget">
+                            <div class="widget search-widget mb-30">
+                                <form>
+                                    <div class="form_group">
+                                        <input type="email" class="form_control" placeholder="Search Foods" name="email" required>
+                                        <button class="search-btn"><i class="far fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="widget category-widget mb-30">
+                                <h4 class="widget-title">Category</h4>
+                                <ul class="category-nav">
+                                    <li><a href="#"><i class="fas fa-plus"></i>Canvas Basket</a></li>
+                                    <li><a href="#"><i class="fas fa-plus"></i>Home Decoration</a></li>
+                                    <li><a href="#"><i class="fas fa-plus"></i>Wood Essentials</a></li>
+                                    <li><a href="#"><i class="fas fa-plus"></i>Home/Furniture</a></li>
+                                    <li><a href="#"><i class="fas fa-plus"></i>Interior Office</a></li>
+                                    <li><a href="#"><i class="fas fa-plus"></i>House Lights</a></li>
+                                </ul>
+                            </div>
+                            <div class="widget recent-product-widget mb-30">
+                                <h4 class="widget-title">Sale Products</h4>
+                                <ul class="recent-product-list">
+                                    <li class="product-item">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/sm-thumb-1.jpg" alt="product image">
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="title">
+                                                <a href="product-details.html">Home Decore</a>
+                                            </h3>
+                                            <a href="products.html" class="category">Smart Watch</a>
+                                        </div>
+                                    </li>
+                                    <li class="product-item">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/sm-thumb-2.jpg" alt="product image">
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="title">
+                                                <a href="product-details.html">Home Decore</a>
+                                            </h3>
+                                            <a href="products.html" class="category">Table Lamp</a>
+                                        </div>
+                                    </li>
+                                    <li class="product-item">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/sm-thumb-3.jpg" alt="product image">
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="title">
+                                                <a href="product-details.html">Home Decore</a>
+                                            </h3>
+                                            <a href="products.html" class="category">Men Shoe</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="widget price-range-widget mb-30">
+                                <h4 class="widget-title">Filter By Price</h4>
+                                <div id="slider-range" class="mb-20"></div>
+                                <div class="price-number">
+                                    <span class="amount"><input type="text" id="amount"></span>
+                                </div>
+                            </div>
+                            <div class="widget tag-cloud-widget mb-30">
+                                <h4 class="widget-title">Popular Tags</h4>
+                                <a href="#">Pasta</a>
+                                <a href="#">Burger</a>
+                                <a href="#">Coffee</a>
+                                <a href="#">Pizza Pasta</a>
+                                <a href="#">Organic</a>
+                                <a href="#">Sea Fish</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="products-style-one">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-1.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-1.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-3">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-2.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-2.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-4">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-3.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-3.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-5">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97 <span class="pre-price">$10.35</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-4.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-4.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-4">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97 <span class="pre-price">$10.35</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-5.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-5.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-3">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-6.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-6.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-3">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-7.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-7.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-4">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-8.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-8.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-5">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-9.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-9.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-4">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97 <span class="pre-price">$10.35</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-10.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-10.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-3">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-11.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-11.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-4">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97 <span class="pre-price">$10.35</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="product-item mb-30">
+                                        <div class="product-thumb">
+                                            <img src="assets/images/products/product-12.jpg" alt="product image">
+                                            <div class="product-overlay d-flex align-items-end justify-content-center">
+                                                <div class="product-meta">
+                                                    <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
+                                                    <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
+                                                    <a href="assets/images/products/product-12.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <ul class="ratings ratings-5">
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                                <li class="star"><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <h3 class="title">
+                                                <a href="product-details.html">Wood Home Decore</a>
+                                            </h3>
+                                            <span class="price">$23.97 <span class="pre-price">$10.35</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-pagination text-center mt-30 mb-30">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-angle-left"></i></a></li>
+                                    <li><a href="#">01</a></li>
+                                    <li><a href="#">02</a></li>
+                                    <li><a href="#">03</a></li>
+                                    <li><a href="#">04</a></li>
+                                    <li><a href="#"><i class="far fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== End Products Section ======-->
+        {% endblock %}
+        <!--====== script ======-->
+        {% block script %}
+        
+        {% endblock %}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block meta %}
+    {% endblock %}
+    {% block body %}
+        <!--====== Start Hero Section ======-->
+        <section class="hero-area">
+            <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(assets/images/bg/breadcrumbs-bg-1.jpg);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="page-title-text text-center">
+                                <h1 class="title">404 Page</h1>
+                                <ul class="breadcrumbs-link">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active">404</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--====== End Hero Section ======-->
+        <section class="error-page-section pt-130 pb-130">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="error-content text-center">
+                            <img src="assets/images/404.png" class="mb-50" alt="">
+                            <h2>OPPS! This Page is Not Found</h2>
+                            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quame
+                                molestiae consequatur veillum dolorem eum fugiate</p>
+                            <a href="index.html" class="main-btn btn-blue-light">go to home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endblock %}
+    <!--====== script ======-->
+    {% block script %}
+    
+    {% endblock %}
