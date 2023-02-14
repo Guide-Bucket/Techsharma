@@ -292,7 +292,7 @@ button {
 .main-btn{
 	display: inline-flex;
 	padding: 12px 35px;
-	background-color: var(--red-dark);
+	background-color: var(--blue-dark);
 	color: #fff;
 	font-size: 16px;
 	font-family: var(--rajdhani);
@@ -356,7 +356,7 @@ button {
     color: var(--text-color);
 }
 .btn-link:hover{
-	color: var(--red-dark);
+	color: var(--blue-dark);
 }
 /* Extra css */
 .mb-minus-130{
@@ -436,7 +436,7 @@ button {
 .preloader .pre-box {
     width: 50px;
     height: 50px;
-    background: var(--red-dark);
+    background: var(--blue-dark);
     animation: animate .5s linear infinite;
     position: absolute;
     top: 0;
@@ -475,7 +475,7 @@ button {
     Start scroll_up css
 */
 .back-to-top {
-    background: var(--red-dark);
+    background: var(--blue-dark);
     border-radius: 50%;
     bottom: 30px;
     color: #fff;
@@ -671,16 +671,16 @@ button {
     display: none;
 }
 .theme-header-one  .header-top-bar .top-left ul li span i{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .theme-header-one  .header-top-bar a:hover{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .theme-header-one .header-top-bar .top-right{
     justify-content: end;
 }
 .theme-header-one .header-top-bar .top-right span.phone i{
-    color: var(--red-dark);
+    color: var(--blue-dark);
     margin-right: 10px;
 }
 .theme-header-one .header-top-bar .top-right span.phone:after{
@@ -855,14 +855,14 @@ button {
     top: 0%;
 }
 .header-navigation .main-menu ul li .sub-menu li:hover > a {
-    background-color: var(--red-dark);
+    background-color: var(--blue-dark);
     color: #fff;
 }
 .header-navigation .main-menu ul li:hover.has-children > a:after {
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .header-navigation .main-menu ul li:hover > a {
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .header-navigation .main-menu ul li:hover > .sub-menu {
     opacity: 1;
@@ -1012,7 +1012,7 @@ button {
     line-height: 40px;
     display: none;
     cursor: pointer;
-    background: var(--red-dark);
+    background: var(--blue-dark);
 }
 .header-navigation .navbar-close i {
     color: #fff;
@@ -1669,7 +1669,7 @@ button {
     height: 390px;
     border-radius: 50%;
     content: '';
-    background-color: var(--red-dark);
+    background-color: var(--blue-dark);
     z-index: -1;
 }
 .fancy-about-one .text-wrapper p{
@@ -1765,7 +1765,7 @@ button {
     line-height: 35px;
 }
 .experience-box .year h2{
-    background: url(../images/about/text-bg.jpg) center;
+    background: url(../images/about/about1.jpg) center;
     background-repeat: repeat;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -2131,7 +2131,7 @@ button {
 .block-style-one .icon i{
     font-size: 45px;
     line-height: 1;
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .block-style-one .text{
     margin-top: -7px;
@@ -2141,7 +2141,7 @@ button {
 }
 .block-style-two:hover  .text h3,
 .block-style-one:hover .text h3.title{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 /* Block  Two css */
 .block-style-two{
@@ -2189,7 +2189,7 @@ button {
 .block-style-three .icon i{
     font-size: 55px;
     line-height: 1;
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .block-style-three .text h3.title{
     font-size: 20px;
@@ -2198,7 +2198,7 @@ button {
     margin-bottom: 7px;
 }
 .block-style-three .text h3.title:hover{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .block-style-three .text p{
     color: rgba(255, 255, 255, 0.6);
@@ -2369,7 +2369,7 @@ button {
     color: #6000ff;
 }
 .block-style-nine.bg-three .icon i{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .block-style-nine.bg-four .icon i{
     color: #2bc48a;
@@ -2416,7 +2416,7 @@ button {
 .block-style-ten .icon i{
     font-size: 70px;
     line-height: 1;
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .block-style-ten .text h4{
     margin-bottom: 10px;
@@ -2443,7 +2443,7 @@ button {
     box-shadow: 0px 10px 60px 0px rgba(87, 87, 87, 0.1);
 }
 .block-style-eleven:hover .text:after{
-    background-color: var(--red-dark);
+    background-color: var(--blue-dark);
 }
 .block-style-eleven:hover:after{
     width: 100%;
@@ -2497,7 +2497,7 @@ button {
 .block-style-twelve .icon i{
 	font-size: 60px;
 	line-height: 1;
-	color: var(--red-dark);
+	color: var(--blue-dark);
 }
 .block-style-twelve .text h5{
     margin-bottom: 5px;
@@ -3088,7 +3088,7 @@ ul.check-list.list-circle-bg li:before{
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    background-color: var(--purple-blue);
+    background-color: var(--blue-dark);
     color: #fff;
 }
 
@@ -3517,7 +3517,7 @@ ul.check-list.list-circle-bg li:before{
     position: absolute;
     top: 30px;
     left: 20px;
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .newsletter-style-one .newsletter-wrapper .newsletter-form .main-btn {
     position: absolute;
@@ -3658,7 +3658,7 @@ ul.check-list.list-circle-bg li:before{
     content: '';
     width: 100%;
     height: 100%;
-    background-color: var(--red-dark);
+    background-color: var(--blue-dark);
     mix-blend-mode: multiply;
     z-index: -1;
 }
@@ -3675,7 +3675,7 @@ ul.check-list.list-circle-bg li:before{
 .counter-style-one .counter-item .icon i{
     font-size: 50px;
     line-height: 1;
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .counter-style-one .counter-item h2.number{
     color: #fff;
@@ -3936,13 +3936,13 @@ ul.check-list.list-circle-bg li:before{
     position: relative;
     width: 5px;
     height: 5px;
-    border: 1px solid var(--red-dark);
+    border: 1px solid var(--blue-dark);
     border-radius: 50%;
     margin-left: 10px;
     margin-right: 10px;
 }
 .portfolio-slider-one ul.slick-dots li.slick-active:after{
-    border-color: var(--red-dark);
+    border-color: var(--blue-dark);
 }
 .portfolio-slider-one ul.slick-dots li:after{
     position: absolute;
@@ -3974,7 +3974,7 @@ ul.check-list.list-circle-bg li:before{
 }
 .portfolio-block-one .portfolio-content .cat-btn{
     padding: 5px 15px;
-    background-color: var(--red-dark);
+    background-color: var(--blue-dark);
     color: #fff;
     text-decoration: underline;
     border-radius: 5px;
@@ -3988,7 +3988,7 @@ ul.check-list.list-circle-bg li:before{
     margin: 17px 0 10px;
 }
 .portfolio-block-one:hover .portfolio-content h3.title{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .portfolio-block-one .portfolio-content p{
     margin-bottom: 7px;
@@ -4452,7 +4452,7 @@ ul.check-list.list-circle-bg li:before{
     width: 20px;
     height: 20px;
     background-color: #fff;
-    border: 5px  solid var(--red-dark);
+    border: 5px  solid var(--blue-dark);
     border-radius: 50%;
     margin-left: 10px;
     margin-right: 10px;
@@ -4476,7 +4476,7 @@ ul.check-list.list-circle-bg li:before{
 }
 .pricing-style-one .pricing-nav .nav-link.active,
 .pricing-style-one .pricing-nav .nav-link:hover{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .pricing-item .pricing-body .list li{
     margin-bottom: 10px;
@@ -4518,10 +4518,10 @@ ul.check-list.list-circle-bg li:before{
     left: 0;
     width: 40%;
     height: 3px;
-    border-bottom: 3px  dashed var(--red-dark);
+    border-bottom: 3px  dashed var(--blue-dark);
 }
 .pricing-style-one .pricing-item .pricing-title-price .pricing-price {
-    background-color: var(--red-dark);
+    background-color: var(--blue-dark);
     display: inline-flex;
     justify-content: center;
     text-align: center;
@@ -4537,7 +4537,7 @@ ul.check-list.list-circle-bg li:before{
     height: 20px;
     bottom: -20px;
     left: 0px;
-    border-top: 20px solid var(--red-dark);
+    border-top: 20px solid var(--blue-dark);
     border-left: 58px solid transparent;
     border-right: 58px solid transparent;
     position: absolute;
@@ -4549,7 +4549,7 @@ ul.check-list.list-circle-bg li:before{
     height: 0;
     top: 0;
     left: -10px;
-    border-bottom: 10px solid var(--red-dark);
+    border-bottom: 10px solid var(--blue-dark);
     border-left: 10px solid transparent;
 }
 .pricing-style-one .pricing-item .pricing-title-price .pricing-price h3.price {
@@ -4583,7 +4583,7 @@ ul.check-list.list-circle-bg li:before{
     margin-bottom: 30px;
 }
 .pricing-style-one .pricing-item .pricing-body .list li.check:before{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .pricing-style-one .pricing-item .pricing-body .main-btn {
     margin-bottom: -20px;
@@ -4592,7 +4592,7 @@ ul.check-list.list-circle-bg li:before{
     color: #fff;
 }
 .pricing-style-one .pricing-item .pricing-body .main-btn:hover{
-    background-color: var(--red-dark);
+    background-color: var(--blue-dark);
 }
 .pricing-style-two .pricing-nav .nav-tabs{
     background-color: #f8f8f8;
@@ -5067,7 +5067,7 @@ ul.check-list.list-circle-bg li:before{
     font-size: 15px;
 }
 .team-style-one .team-item .team-img .team-overlay .team-content h6.title:hover{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .team-style-one .team-item .team-img .team-overlay .team-content p.position{
     font-size: 14px;
@@ -5085,7 +5085,7 @@ ul.check-list.list-circle-bg li:before{
     margin-right: 0px;
 }
 .team-style-one .team-item .team-img .team-overlay .team-content ul.social-link li a:hover{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 
 /* Team Two css */
@@ -5817,7 +5817,7 @@ ul.ratings{
     transition: all 0.3s;
 }
 .product-details-wrapper .product-info .product-cart ul li .wishlist-btn:hover{
-    background-color: var(--red-dark);
+    background-color: var(--blue-dark);
     color: #fff;
     border-color: transparent;
 }
@@ -5990,7 +5990,7 @@ ul.ratings{
 }
 .blog-style-one .blog-post-item .entry-content .post-meta ul li span a:hover,
 .blog-style-one .blog-post-item .entry-content h3.title:hover{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .blog-style-one .blog-post-item .entry-content  p{
     margin-bottom: 27px;
@@ -5999,7 +5999,7 @@ ul.ratings{
     padding: 8px 28px;
 }
 .blog-style-one .blog-post-item .entry-content .main-btn.filled-btn:hover{
-    background-color: var(--red-dark);
+    background-color: var(--blue-dark);
     color: #fff;
 }
 
@@ -6804,23 +6804,23 @@ textarea.form_control{
     color: rgba(255, 255, 255, .60);
 }
 .footer-default .footer-widget .widget.about-widget .about-content ul li i{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .footer-default .footer-widget .widget.footer-nav-widget ul li a:hover{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .footer-default .footer-widget .widget.about-widget .about-content ul li span a:hover{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .footer-default .footer-widget .widget.footer-nav-widget ul li a:after{
-    background-color: var(--red-dark);
+    background-color: var(--blue-dark);
 }
 .footer-default .footer-widget .widget.about-widget .about-content h4,
 .footer-default .footer-widget .widget h4.widget-title{
     color: #fff;
 }
 .footer-default .footer-copyright ul.social-link li a:hover{
-    color: var(--red-dark);
+    color: var(--blue-dark);
 }
 .footer-default .footer-widget .footer-nav-widget{
     padding-left: 70px;

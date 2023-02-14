@@ -2,313 +2,331 @@
 {% extends 'base.html' %}
 {% load static %}
 
-    {% block meta %}
-    {% endblock %}
-    {% block CSS %}
-    {% endblock %}
-    {% block body %}
-        <!--====== Start Hero Section ======-->
-        <section class="hero-area">
-            <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(assets/images/bg/breadcrumbs-bg-1.jpg);">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="page-title-text text-center">
-                                <h1 class="title">Service Details</h1>
-                                <ul class="breadcrumbs-link">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li class="active">Service Details</li>
-                                </ul>
-                            </div>
-                        </div>
+{% block meta %}
+{% endblock %}
+{% block CSS %}
+{% endblock %}
+{% block body %}
+<!--====== Start Hero Section ======-->
+<section class="hero-area">
+    <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(static/images/bg/bcbg-serviceDetails.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="page-title-text text-center">
+                        <h1 class="title">Service Details</h1>
+                        <ul class="breadcrumbs-link">
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li class="active">Service Details</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section><!--====== End Hero Section ======-->
-        <!--====== Start About Section ======-->
-        <section class="fancy-about fancy-about-five pt-130 pb-80">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="text-wrapper mb-50">
-                            <div class="experience-box">
-                                <div class="big-text mb-45">25</div>
-                                <div class="content mb-45">
-                                    <span class="span">Years Of Experience</span>
-                                    <h2>Professional IT Solutions 
-                                        for Business Success</h2>
-                                    <blockquote>
-                                        <p>Sed ut perspiciatis unde omnis natus error sit voluptatem accustium dolorem
-                                            que laudantium totam rem eaque</p>
-                                    </blockquote>
+        </div>
+    </div>
+</section>
+<!--====== End Hero Section ======-->
+<!--====== Start About Section ======-->
+<section class="fancy-about fancy-about-five pt-130 pb-80">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="text-wrapper mb-50">
+                    <div class="experience-box">
+                        <div class="big-text mb-45">1</div>
+                        <div class="content mb-45">
+                            <span class="span">Years Of Experience</span>
+                            <h2>Professional IT Solutions
+                                for Business Success</h2>
+                            <blockquote>
+                                <p>if you're looking for a reliable and professional IT solutions provider to partner
+                                    with, look no further. We're ready to help your business succeed in today's
+                                    fast-paced and constantly evolving tech landscape.</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="counter-wrapper">
+                        <div class="row">
+                            <div class="col-md-4 col-6 counter-column">
+                                <div class="counter-item">
+                                    <h2 class="number"><span class="count">256</span>+</h2>
+                                    <p>Happy Customer</p>
                                 </div>
                             </div>
-                            <div class="counter-wrapper">
-                                <div class="row">
-                                    <div class="col-md-4 col-6 counter-column">
-                                        <div class="counter-item">
-                                            <h2 class="number"><span class="count">25630</span>+</h2>
-                                            <p>Happy Customer</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-6 counter-column">
-                                        <div class="counter-item">
-                                            <h2 class="number"><span class="count">75646</span>+</h2>
-                                            <p>Star Work Reviews</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-6 counter-column">
-                                        <div class="counter-item">
-                                            <h2 class="number"><span class="count">89634</span>+</h2>
-                                            <p>Project Complate</p>
-                                        </div>
-                                    </div>
+                            <div class="col-md-4 col-6 counter-column">
+                                <div class="counter-item">
+                                    <h2 class="number"><span class="count">75</span>+</h2>
+                                    <p>Star Work Reviews</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="about-img mb-50">
-                            <img src="assets/images/about/about-9.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!--====== End About Section ======-->
-        <!--====== Start Features Section ======-->
-        <section class="features-area features-style-four mb-minus-100">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="block-style-eight d-flex">
-                            <div class="img">
-                                <img src="assets/images/features/img-1.jpg" alt="Image">
-                            </div>
-                            <div class="text">
-                                <h3>Machine Learning</h3>
-                                <p>Sed perspiciatis unde omnatus voluptate accusantie oloremque laudantiu totamrem beatae</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="block-style-eight d-flex">
-                            <div class="img">
-                                <img src="assets/images/features/img-2.jpg" alt="Image">
-                            </div>
-                            <div class="text">
-                                <h3>Artificial Intelligence</h3>
-                                <p>Sed perspiciatis unde omnatus voluptate accusantie oloremque laudantiu totamrem beatae</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="block-style-eight d-flex">
-                            <div class="img">
-                                <img src="assets/images/features/img-3.jpg" alt="Image">
-                            </div>
-                            <div class="text">
-                                <h3>Augmented Reality</h3>
-                                <p>Sed perspiciatis unde omnatus voluptate accusantie oloremque laudantiu totamrem beatae</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--====== End Features Section ======-->
-        <section class="features-area features-style-eight light-gray-bg pt-230 pb-90">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="section-title text-center mb-50">
-                            <span class="sub-title sub-title-bg blue-light-bg">what  we  do</span>
-                            <h2>Most Organize Core Features 
-                                For IT Solutions</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="block-style-twenty animate-icon d-flex mb-30">
-                            <div class="icon">
-                                <i class="flaticon-help"></i>
-                            </div>
-                            <div class="text">
-                                <h3 class="text-underline">IT Solution Management</h3>
-                                <p>Sed ut perspiciatis unde omnis iste natus errors voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae explicabo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="block-style-twenty animate-icon d-flex mb-30">
-                            <div class="icon">
-                                <i class="flaticon-technical-support"></i>
-                            </div>
-                            <div class="text">
-                                <h3 class="text-underline">Powerful Database Security</h3>
-                                <p>Sed ut perspiciatis unde omnis iste natus errors voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae explicabo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="block-style-twenty animate-icon d-flex mb-30">
-                            <div class="icon">
-                                <i class="flaticon-it"></i>
-                            </div>
-                            <div class="text">
-                                <h3 class="text-underline">Quality Technical Support</h3>
-                                <p>Sed ut perspiciatis unde omnis iste natus errors voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae explicabo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="block-style-twenty animate-icon d-flex mb-30">
-                            <div class="icon">
-                                <i class="flaticon-technical-support-1"></i>
-                            </div>
-                            <div class="text">
-                                <h3 class="text-underline">Product Engineering</h3>
-                                <p>Sed ut perspiciatis unde omnis iste natus errors voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae explicabo.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--====== Start CTA Section ======-->
-        <section class="cta-area cta-style-three bg_cover pt-140 pb-140" style="background-image: url(assets/images/bg/cta-bg-2.jpg);">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="cta-content-box text-center">
-                            <h2>Ready To Get Our 
-                                Professional IT Services ?</h2>
-                            <ul class="button">
-                                <li><a href="team.html" class="main-btn btn-blue-light">Meet the team</a></li>
-                                <li><a href="service-1.html" class="main-btn btn-purple">Our services</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!--====== End CTA Section ======-->
-        <!--====== Start Fancy Block Section ======-->
-        <section class="fancy-text-block fancy-text-block-eleven pt-130 pb-80">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="img-holder-box mb-50">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="img-holder border-top-left-radius mb-30">
-                                        <img src="assets/images/block/gallery-9.jpg" alt="">
-                                    </div>
-                                    <div class="img-holder border-bottom-left-radius mb-30">
-                                        <img src="assets/images/block/gallery-10.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="img-holder mb-30">
-                                        <img src="assets/images/block/gallery-11.jpg" alt="">
-                                    </div>
+                            <div class="col-md-4 col-6 counter-column">
+                                <div class="counter-item">
+                                    <h2 class="number"><span class="count">89</span>+</h2>
+                                    <p>Project Complate</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="text-wrapper">
-                            <div class="section-title section-title-two mb-25">
-                                <span class="sub-title">It Benifits</span>
-                                <h2>We Provide How Can Growth 
-                                    Your IT Business</h2>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="about-img mb-50">
+                    <img src="{% static 'images/about/about2.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End About Section ======-->
+<!--====== Start Features Section ======-->
+<!-- <section class="features-area features-style-four mb-minus-100">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="block-style-eight d-flex">
+                    <div class="img">
+                        <img src="{% static 'images/features/img-1.jpg' %}" alt="Image">
+                    </div>
+                    <div class="text">
+                        <h3>Machine Learning</h3>
+                        <p>Sed perspiciatis unde omnatus voluptate accusantie oloremque laudantiu totamrem beatae</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="block-style-eight d-flex">
+                    <div class="img">
+                        <img src="{% static 'images/features/img-2.jpg' %}" alt="Image">
+                    </div>
+                    <div class="text">
+                        <h3>Artificial Intelligence</h3>
+                        <p>Sed perspiciatis unde omnatus voluptate accusantie oloremque laudantiu totamrem beatae</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="block-style-eight d-flex">
+                    <div class="img">
+                        <img src="{% static 'images/features/img-3.jpg' %}" alt="Image">
+                    </div>
+                    <div class="text">
+                        <h3>Augmented Reality</h3>
+                        <p>Sed perspiciatis unde omnatus voluptate accusantie oloremque laudantiu totamrem beatae</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!--====== End Features Section ======-->
+<section class="features-area features-style-eight light-gray-bg pt-230 pb-90">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center mb-50">
+                    <span class="sub-title sub-title-bg blue-light-bg">what we do</span>
+                    <h2>Most Organize Core Features
+                        For IT Solutions</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="block-style-twenty animate-icon d-flex mb-30">
+                    <div class="icon">
+                        <i class="flaticon-help"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">IT Solution Management</h3>
+                        <p>we take a proactive approach to our work, monitoring and maintaining our clients' systems to
+                            ensure that they're always running at peak performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="block-style-twenty animate-icon d-flex mb-30">
+                    <div class="icon">
+                        <i class="flaticon-technical-support"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline"> web development</h3>
+                        <p>With our expertise in web development, you can trust that your company's online presence is
+                            in good hands. We also offer ongoing support and maintenance services to ensure that your
+                            website stays up-to-date and performing at its best.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="block-style-twenty animate-icon d-flex mb-30">
+                    <div class="icon">
+                        <i class="flaticon-it"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">Quality Technical Support</h3>
+                        <p>Our team of technical support professionals is made up of highly skilled and knowledgeable
+                            individuals who are dedicated to providing our clients with the best possible service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="block-style-twenty animate-icon d-flex mb-30">
+                    <div class="icon">
+                        <i class="flaticon-technical-support-1"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">Product Engineering</h3>
+                        <p>At our IT company, we have a team of skilled and experienced product engineers who are
+                            dedicated to delivering high-quality, innovative solutions to our clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== Start CTA Section ======-->
+<section class="cta-area cta-style-three bg_cover pt-140 pb-140"
+    style="background-image: url(static/images/bg/cta-bg-2.jpg);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="cta-content-box text-center">
+                    <h2>Ready To Get Our
+                        Professional IT Services ?</h2>
+                    <ul class="button">
+                        <li><a href="{% url 'team' %}" class="main-btn btn-blue-light">Meet the team</a></li>
+                        <li><a href="{% url 'service1' %}" class="main-btn btn-purple">Our services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End CTA Section ======-->
+<!--====== Start Fancy Block Section ======-->
+<section class="fancy-text-block fancy-text-block-eleven pt-130 pb-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="img-holder-box mb-50">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="img-holder border-top-left-radius mb-30">
+                                <img src="{% static 'images/block/b1.jpg' %}" alt="">
                             </div>
-                            <p>On the other hand denounce with righteous indignation and dislike 
-                                men who are so beguiled and demoralized by the charms of pleasure of the moment blinded by desire that they cannot foresee</p>
-                            <ul class="check-list list-circle-bg mb-20">
-                                <li>Software Solutions</li>
-                                <li>Product Engineering</li>
-                                <li>Database Security</li>
-                                <li>Mobile Strategy</li>
-                                <li>IT Consultancy</li>
-                                <li>Business Growth</li>
-                            </ul>
-                            <a href="about.html" class="main-btn btn-blue-light">Learn More Us</a>
+                            <div class="img-holder border-bottom-left-radius mb-30">
+                                <img src="{% static 'images/block/b3.jpg' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="img-holder mb-30">
+                                <img src="{% static 'images/block/b2.jpg' %}" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--====== End Fancy Block Section ======-->
-        <!--====== Start Contact Section ======-->
-        <section class="contact-area contact-style-three bg_cover pt-130 pb-80" style="background-image: url(assets/images/bg/testimonial-bg-1.jpg);"> 
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="contact-section-box">
-                            <div class="section-title section-title-two mb-25">
-                                <span class="sub-title">Need help ?</span>
-                                <h2>Let’s Talk About IT
-                                    Solutions</h2>
-                            </div>
-                            <p>On the other hand denounce righteous indige
-                                ation and dislike men who are so beguiled and
-                                demoralized by the charms of pleasure of the moment blinded by desire</p>
-                            <ul class="social-link">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            </ul>
-                        </div>
+            <div class="col-lg-6">
+                <div class="text-wrapper">
+                    <div class="section-title section-title-two mb-25">
+                        <span class="sub-title">It Benifits</span>
+                        <h2>We Provide How Can Growth
+                            Your IT Business</h2>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="contact-wrapper">
-                            <form class="contact-form">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form_group">
-                                            <input type="text" class="form_control" placeholder="Full Name Here" name="name" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form_group">
-                                            <input type="email" class="form_control" placeholder="Email Address" name="email" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form_group">
-                                            <input type="url" class="form_control" placeholder="Website" name="website" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form_group">
-                                            <select class="wide">
-                                                <option value="01">Customer Support</option>
-                                                <option value="01">Customer Support</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                    <p>Our team of experienced professionals has the expertise and knowledge to handle all of your IT
+                        needs, from infrastructure and security to software development and support. We work closely
+                        with our clients to understand their unique business requirements and provide customized
+                        solutions that meet their specific needs.</p>
+                    <ul class="check-list list-circle-bg mb-20">
+                        <li>Software Solutions</li>
+                        <li>Product Engineering</li>
+                        <li>Database Security</li>
+                        <li>Mobile Strategy</li>
+                        <li>IT Consultancy</li>
+                        <li>Business Growth</li>
+                    </ul>
+                    <a href="{% url 'about' %}" class="main-btn btn-blue-light">Learn More Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End Fancy Block Section ======-->
+<!--====== Start Contact Section ======-->
+<section class="contact-area contact-style-three bg_cover pt-130 pb-80"
+    style="background-image: url(static/images/bg/testimonial-bg-1.jpg);">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="contact-section-box">
+                    <div class="section-title section-title-two mb-25">
+                        <span class="sub-title">Need help ?</span>
+                        <h2>Let’s Talk About IT
+                            Solutions</h2>
+                    </div>
+                    <p>In today's digital age, IT solutions are crucial for businesses and organizations of all sizes.
+                        From software and hardware to services and support, IT solutions help organizations streamline
+                        their operations, improve communication, and enhance security. But with so many options
+                        available, how do you choose the right IT solutions for your business?</p>
+                    <ul class="social-link">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="contact-wrapper">
+                    <form class="contact-form" action="{% url 'saveInfo' %}" method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="text" class="form_control" placeholder="Full Name Here" name="name"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="text" class="form_control" placeholder="Phone Number" name="phone"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="email" class="form_control" placeholder="Email Address" name="email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="url" class="form_control" placeholder="Website" name="website"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form_group">
+                                    <textarea class="form_control" placeholder="Write Message" name="message"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form_group">
                                     <div class="col-lg-12">
-                                        <div class="form_group">
-                                            <textarea class="form_control" placeholder="Write Message" name="message" required></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form_group">
-                                            <div class="col-lg-12">
-                                                <button class="main-btn btn-purple">Get free consultations</button>
-                                            </div>
-                                        </div>
+                                        <button class="main-btn btn-purple">Get free consultations</button>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
-        </section><!--====== End Contact Section ======-->
-        {% endblock %}
-        <!--====== script ======-->
-        {% block script %}
-        
-        {% endblock %}
+        </div>
+    </div>
+</section>
+<!--====== End Contact Section ======-->
+{% endblock %}
+<!--====== script ======-->
+{% block script %}
+
+{% endblock %}

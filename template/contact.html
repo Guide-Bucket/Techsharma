@@ -1,176 +1,185 @@
 <!DOCTYPE html>
+<!-- completed -->
 {% extends 'base.html' %}
 {% load static %}
 
-    {% block meta %}
-    {% endblock %}
-    {% block CSS %}
-    {% endblock %}
-    {% block body %}
-        <!--====== Start Hero Section ======-->
-        <section class="hero-area">
-            <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(assets/images/bg/breadcrumbs-bg-1.jpg);">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="page-title-text text-center">
-                                <h1 class="title">Contact Us</h1>
-                                <ul class="breadcrumbs-link">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li class="active">Contact Us</li>
-                                </ul>
-                            </div>
-                        </div>
+{% block meta %}
+{% endblock %}
+{% block CSS %}
+{% endblock %}
+{% block body %}
+<!--====== Start Hero Section ======-->
+<section class="hero-area">
+    <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(static/images/bg/bcbg-contect.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="page-title-text text-center">
+                        <h1 class="title">Contact Us</h1>
+                        <ul class="breadcrumbs-link">
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li class="active">Contact Us</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section><!--====== End Hero Section ======-->
-        <!--====== Start Contact Information Section ======-->
-        <section class="contact-information-area contact-information-style-one pt-120">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="brand-logo text-center mb-100">
-                            <a href="index.html"><img src="assets/images/logo/contact-logo.png" alt="contact logo"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row no-gutters">
-                    <div class="col-lg-8">
-                        <div class="information-wrapper mb-50">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="information-item mb-60">
-                                        <div class="icon">
-                                            <i class="flaticon-map"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h5>New York</h5>
-                                            <p>55 Main Street, B - Block, 
-                                                3rd Floor, New York</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="information-item mb-60">
-                                        <div class="icon">
-                                            <i class="flaticon-email"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h5>Our Hotlines</h5>
-                                            <p><span>Mobile :</span><a href="tel:+01234567899">+012 (345) 678 99</a></p>
-                                            <p><span>Phone :</span><a href="tel:+123456789">+123456789</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="information-item mb-60">
-                                        <div class="icon">
-                                            <i class="flaticon-map"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h5>San Francisco</h5>
-                                            <p>720 Main Street, B - Block, 
-                                                Floor, San Francisco</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="information-item mb-60">
-                                        <div class="icon">
-                                            <i class="flaticon-phone"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h5>Email Address</h5>
-                                            <p><a href="mailto:hotlines@gmail.com">hotlines@gmail.com</a></p>
-                                            <p><a href="www.infor.net">www.infor.net</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="information-cta mb-50">
-                            <div class="information-box mb-25">
-                                <h3>Working Hour</h3>
-                                <h5>Sun - Friday   :  08 am - 09pm</h5>
-                                <h5 class="st-close">Satarday Close</h5>
-                            </div>
-                            <div class="information-box mb-25">
-                                <h3>Ready To Work Us ?</h3>
-                                <p>Sed perspiciatis unde omnisnae
-                                    voluptate accusantie dolore</p>
-                                <a href="contact.html" class="main-btn main-btn-blue">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </div>
+</section>
+<!--====== End Hero Section ======-->
+<!--====== Start Contact Information Section ======-->
+<section class="contact-information-area contact-information-style-one pt-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="brand-logo text-center mb-100">
+                    <a href="{% url 'index' %}"><img src="{% static 'images/logo/ts.png' %}" alt="contact logo"></a>
                 </div>
             </div>
-        </section><!--====== End Contact Information Section ======-->
-        <!--====== Start Map section ======-->
-        <section class="contact-page-map">
-            <div class="map-box">
-                <iframe src="https://maps.google.com/maps?q=new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-            </div>
-        </section><!--====== End Map section ======-->
-        <!--====== Start Contact Section ======-->
-        <section class="contact-area contact-style-two">
-            <div class="contact-wrapper">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6">
-                            <div class="section-title text-center mb-55">
-                                <h2>Send Us Message</h2>
-                                <h5>Don’t Hesited To Contact With Us! Feel Free To Message Us</h5>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-8">
+                <div class="information-wrapper mb-50">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="contact-form">
-                                <form>
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                            <div class="form_group">
-                                                <input type="text" class="form_control" placeholder="Full Name" name="name" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                            <div class="form_group">
-                                                <input type="text" class="form_control" placeholder="Phone Number" name="phone" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                            <div class="form_group">
-                                                <input type="email" class="form_control" placeholder="Email Address" name="email" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                            <div class="form_group">
-                                                <input type="url" class="form_control" placeholder="Website" name="url" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12">
-                                            <div class="form_group">
-                                                <textarea name="messsage" placeholder="Website" class="form_control"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-5">
-                                            <div class="form_group text-center">
-                                                <button class="main-btn btn-purple w-100">send message</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                        <div class="col-lg-6">
+                            <div class="information-item mb-60">
+                                <div class="icon">
+                                    <i class="flaticon-map"></i>
+                                </div>
+                                <div class="text">
+                                    <h5>Web Address</h5>
+                                    <p>TechSharma.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="information-item mb-60">
+                                <div class="icon">
+                                    <i class="flaticon-email"></i>
+                                </div>
+                                <div class="text">
+                                    <h5>Our Hotlines</h5>
+                                    <p><span>Mobile :</span><a href="tel:+01234567899">+012 (345) 678 99</a></p>
+                                    <p><span>Phone :</span><a href="tel:+123456789">+123456789</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="information-item mb-60">
+                                <div class="icon">
+                                    <i class="flaticon-map"></i>
+                                </div>
+                                <div class="text">
+                                    <h5>Web Address</h5>
+                                    <p>www.Techsharma.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="information-item mb-60">
+                                <div class="icon">
+                                    <i class="flaticon-phone"></i>
+                                </div>
+                                <div class="text">
+                                    <h5>Email Address</h5>
+                                    <p><a href="mailto:info@TechSharma.com">info@TechSharma.com</a></p>
+                                    <p><a href="www.TechSharma.com">www.TechSharma.com</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!--====== End Contact Section ======-->
-        {% endblock %}
-        <!--====== script ======-->
-        {% block script %}
-        
-        {% endblock %}
+            <div class="col-lg-4">
+                <div class="information-cta mb-50">
+                    <div class="information-box mb-25">
+                        <h3>Working Hour</h3>
+                        <h5>Mon - Friday : 09 am - 05 pm</h5>
+                        <h5 class="st-close">Satarday Close</h5>
+                        <h5 class="st-close">Sunday Close</h5>
+                    </div>
+                    <div class="information-box mb-25">
+                        <h3>Ready To Work Us ?</h3>
+                        <p>Are you ready to work with us? At our company, we pride ourselves on delivering top-quality
+                            services and solutions to our clients. </p>
+                        <a href="{% url 'contact' %}" class="main-btn main-btn-blue">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End Contact Information Section ======-->
+<!--====== Start Map section ======-->
+<section class="contact-page-map">
+    <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.38256283416!2d75.6504698660782!3d26.885447917775686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1672724055198!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+<!--====== End Map section ======-->
+<!--====== Start Contact Section ======-->
+<section class="contact-area contact-style-two">
+    <div class="contact-wrapper">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center mb-55">
+                        <h2>Send Us Message</h2>
+                        <h5>Don’t Hesited To Contact With Us! Feel Free To Message Us</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-form">
+                        <form action="{% url 'saveInfo' %}" method="post">
+                            {% csrf_token %}
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form_group">
+                                        <input type="text" class="form_control" placeholder="Full Name" name="name"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form_group">
+                                        <input type="text" class="form_control" placeholder="Phone Number" name="phone"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form_group">
+                                        <input type="email" class="form_control" placeholder="Email Address"
+                                            name="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form_group">
+                                        <input type="url" class="form_control" placeholder="Website" name="website"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form_group">
+                                        <textarea name="messsage" placeholder="Write Message" class="form_control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="form_group text-center">
+                                        <button class="main-btn btn-purple w-100">send message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End Contact Section ======-->
+{% endblock %}
+<!--====== script ======-->
+{% block script %}
+
+{% endblock %}

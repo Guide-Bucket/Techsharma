@@ -46,7 +46,7 @@
                 <div class="container">
                     <div class="primary-menu">
                         <div class="site-branding">
-                            <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo-3.png" alt="Site Logo"></a>
+                            <a href="{% url 'index' %}" class="brand-logo"><img src="assets/images/logo/logo-3.png" alt="Site Logo"></a>
                         </div>
                         <div class="nav-menu">
                             <!-- Navbar Close -->
@@ -65,7 +65,7 @@
                                 <ul>
                                     <li class="menu-item has-children"><a href="#">Home</a>
                                         <ul class="sub-menu">
-                                            <li><a href="index.html">It Company</a></li>
+                                            <li><a href="{% url 'index' %}">It Company</a></li>
                                             <li><a href="it-agency.html">It Agency</a></li>
                                             <li><a href="it-company.html">Software Company</a></li>
                                             <li><a href="help-desk.html">Help Desk</a></li>
@@ -76,41 +76,41 @@
                                     </li>
                                     <li class="menu-item has-children"><a href="#">Services</a>
                                         <ul class="sub-menu">
-                                            <li><a href="service-1.html">Service O1</a></li>
+                                            <li><a href="{% url 'service1' %}">Service O1</a></li>
                                             <li><a href="service-2.html">Service 02</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
+                                            <li><a href="{% url 'serviceDetails' %}">Service Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item has-children"><a href="#">Cases</a>
                                         <ul class="sub-menu">
                                             <li><a href="project-1.html">Project O1</a></li>
-                                            <li><a href="project-2.html">Project 02</a></li>
+                                            <li><a href="{% url 'project2' %}">Project 02</a></li>
                                             <li><a href="project-3.html">Project 03</a></li>
                                             <li><a href="project-details.html">Project Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item has-children"><a href="#">Blog</a>
                                         <ul class="sub-menu">
-                                            <li><a href="blog-standard.html">Blog Standard</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                            <li><a href="{% url 'blog' %}">Blog Standard</a></li>
+                                            <li><a href="{% url 'blogDetails' %}">Blog Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item has-children"><a href="#">Pages</a>
                                         <ul class="sub-menu">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="career.html">Career</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="team.html">Our Team</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="{% url 'career' %}">Career</a></li>
+                                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                                            <li><a href="{% url 'team' %}">Our Team</a></li>
+                                            <li><a href="{% url 'teamDetails' %}">Team Details</a></li>
                                             <li class="has-children"><a href="#">Our Shop</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="products.html">Products</a></li>
-                                                    <li><a href="product-details.html">Product Details</a></li>
+                                                    <li><a href="{% url 'products' %}">Products</a></li>
+                                                    <li><a href="{% url 'productDetails' %}">Product Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                            <li><a href="404.html">404</a></li>
+                                            <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                                            <li><a href="{% url 'faq' %}">FAQ</a></li>
+                                            <li><a href="{% url 'notFound' %}">404</a></li>
                                         </ul>
                                     </li>
                                     
@@ -150,8 +150,8 @@
                                     <p>Sed perspiciatis unde omnis natus voluptate accusantiuy 
                                         doloreue laudantium totam rem aperiam</p>
                                     <ul class="button">
-                                        <li><a href="about.html" class="main-btn btn-gradient-blue">get started us</a></li>
-                                        <li><a href="service-1.html" class="main-btn btn-white">How it works</a></li>
+                                        <li><a href="{% url 'about' %}" class="main-btn btn-gradient-blue">get started us</a></li>
+                                        <li><a href="{% url 'service1' %}" class="main-btn btn-white">How it works</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -169,8 +169,8 @@
                                     <p>Sed perspiciatis unde omnis natus voluptate accusantiuy 
                                         doloreue laudantium totam rem aperiam</p>
                                     <ul class="button">
-                                        <li><a href="about.html" class="main-btn btn-gradient-blue">get started us</a></li>
-                                        <li><a href="service-1.html" class="main-btn btn-white">How it works</a></li>
+                                        <li><a href="{% url 'about' %}" class="main-btn btn-gradient-blue">get started us</a></li>
+                                        <li><a href="{% url 'service1' %}" class="main-btn btn-white">How it works</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -264,7 +264,7 @@
                                 <li>Software Development</li>
                                 <li>Product Engineering</li>
                             </ul>
-                            <a href="about.html" class="main-btn btn-blue-dark">learn more us</a>
+                            <a href="{% url 'about' %}" class="main-btn btn-blue-dark">learn more us</a>
                         </div>
                     </div>
                 </div>
@@ -310,7 +310,7 @@
                                 <i class="flaticon-puzzle-1"></i>
                             </div>
                             <div class="text">
-                                <h3 class="title"><a href="service-details.html" class="text-underline">Infrastructure</a></h3>
+                                <h3 class="title"><a href="{% url 'serviceDetails' %}" class="text-underline">Infrastructure</a></h3>
                                 <p>But I must explain to you how all this mistaken ideofe denouncing pleasure</p>
                             </div>
                         </div>
@@ -321,7 +321,7 @@
                                 <i class="flaticon-solution-1"></i>
                             </div>
                             <div class="text">
-                                <h3 class="title"><a href="service-details.html" class="text-underline">IT Engineering</a></h3>
+                                <h3 class="title"><a href="{% url 'serviceDetails' %}" class="text-underline">IT Engineering</a></h3>
                                 <p>But I must explain to you how all this mistaken ideofe denouncing pleasure</p>
                             </div>
                         </div>
@@ -332,7 +332,7 @@
                                 <i class="flaticon-cyber-security"></i>
                             </div>
                             <div class="text">
-                                <h3 class="title"><a href="service-details.html" class="text-underline">Cyber Security</a></h3>
+                                <h3 class="title"><a href="{% url 'serviceDetails' %}" class="text-underline">Cyber Security</a></h3>
                                 <p>But I must explain to you how all this mistaken ideofe denouncing pleasure</p>
                             </div>
                         </div>
@@ -343,7 +343,7 @@
                                 <i class="flaticon-internet-of-things"></i>
                             </div>
                             <div class="text">
-                                <h3 class="title"><a href="service-details.html" class="text-underline">Apps Development</a></h3>
+                                <h3 class="title"><a href="{% url 'serviceDetails' %}" class="text-underline">Apps Development</a></h3>
                                 <p>But I must explain to you how all this mistaken ideofe denouncing pleasure</p>
                             </div>
                         </div>
@@ -354,7 +354,7 @@
                                 <i class="flaticon-solution-2"></i>
                             </div>
                             <div class="text">
-                                <h3 class="title"><a href="service-details.html" class="text-underline">Staff Augmentation</a></h3>
+                                <h3 class="title"><a href="{% url 'serviceDetails' %}" class="text-underline">Staff Augmentation</a></h3>
                                 <p>But I must explain to you how all this mistaken ideofe denouncing pleasure</p>
                             </div>
                         </div>
@@ -365,7 +365,7 @@
                                 <i class="flaticon-blockchain"></i>
                             </div>
                             <div class="text">
-                                <h3 class="title"><a href="service-details.html" class="text-underline">Automation Solutions</a></h3>
+                                <h3 class="title"><a href="{% url 'serviceDetails' %}" class="text-underline">Automation Solutions</a></h3>
                                 <p>But I must explain to you how all this mistaken ideofe denouncing pleasure</p>
                             </div>
                         </div>
@@ -551,7 +551,7 @@
                                     <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguile and demoralized by the charms of pleasurexs</p>
                                 </div>
                             </div>
-                            <a href="contact.html" class="main-btn btn-gradient-blue">Meet our team</a>
+                            <a href="{% url 'contact' %}" class="main-btn btn-gradient-blue">Meet our team</a>
                         </div>
                     </div>
                 </div>
@@ -723,9 +723,9 @@
                                         <li><span><i class="far fa-comments"></i><a href="#">comments (05)</a></span></li>
                                     </ul>
                                 </div>
-                                <h3 class="title"><a href="blog-details.html">Build Launch Powerful Responsives Websites With Editor Perfect</a></h3>
+                                <h3 class="title"><a href="{% url 'blogDetails' %}">Build Launch Powerful Responsives Websites With Editor Perfect</a></h3>
                                 <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequtur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatuSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiums totam rem aperiam eaque ipsa quae abillo inventore veritatis et quasi architecto</p>
-                                <a href="blog-details.html" class="btn-link">Read more</a>
+                                <a href="{% url 'blogDetails' %}" class="btn-link">Read more</a>
                             </div>
                         </div>
                         <div class="blog-post-item mb-30">
@@ -740,9 +740,9 @@
                                         <li><span><i class="far fa-comments"></i><a href="#">comments (05)</a></span></li>
                                     </ul>
                                 </div>
-                                <h3 class="title"><a href="blog-details.html">Meet Image Optimization, A New Smashing Book By Addy Osmani</a></h3>
+                                <h3 class="title"><a href="{% url 'blogDetails' %}">Meet Image Optimization, A New Smashing Book By Addy Osmani</a></h3>
                                 <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequtur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatuSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiums totam rem aperiam eaque ipsa quae abillo inventore veritatis et quasi architecto</p>
-                                <a href="blog-details.html" class="btn-link">Read more</a>
+                                <a href="{% url 'blogDetails' %}" class="btn-link">Read more</a>
                             </div>
                         </div>
                         <div class="blog-post-item mb-30">
@@ -757,13 +757,13 @@
                                         <li><span><i class="far fa-comments"></i><a href="#">comments (05)</a></span></li>
                                     </ul>
                                 </div>
-                                <h3 class="title"><a href="blog-details.html">Why Content Is Such A Fundamental Part Of The Web Design Process</a></h3>
+                                <h3 class="title"><a href="{% url 'blogDetails' %}">Why Content Is Such A Fundamental Part Of The Web Design Process</a></h3>
                                 <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequtur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatuSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiums totam rem aperiam eaque ipsa quae abillo inventore veritatis et quasi architecto</p>
-                                <a href="blog-details.html" class="btn-link">Read more</a>
+                                <a href="{% url 'blogDetails' %}" class="btn-link">Read more</a>
                             </div>
                         </div>
                         <div class="button text-center mt-60">
-                            <a href="blog-standard.html" class="filled-btn main-btn">View More News</a>
+                            <a href="{% url 'blog' %}" class="filled-btn main-btn">View More News</a>
                         </div>
                     </div>
                 </div>
@@ -810,7 +810,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="widget about-widget mb-40">
                                 <div class="logo mb-35">
-                                    <a href="index.html"><img src="assets/images/logo/logo-4.png" alt="Theme Logo"></a>
+                                    <a href="{% url 'index' %}"><img src="assets/images/logo/logo-4.png" alt="Theme Logo"></a>
                                 </div>
                                 <div class="about-content">
                                     <h4>Don’t Hesited to Conatct 

@@ -46,7 +46,7 @@
                 <div class="container-fluid">
                     <div class="primary-menu">
                         <div class="site-branding">
-                            <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo-7.png" alt="Site Logo"></a>
+                            <a href="{% url 'index' %}" class="brand-logo"><img src="assets/images/logo/logo-7.png" alt="Site Logo"></a>
                         </div>
                         <div class="nav-menu">
                             <!-- Navbar Close -->
@@ -65,7 +65,7 @@
                                 <ul>
                                     <li class="menu-item has-children"><a href="#">Home</a>
                                         <ul class="sub-menu">
-                                            <li><a href="index.html">It Company</a></li>
+                                            <li><a href="{% url 'index' %}">It Company</a></li>
                                             <li><a href="it-agency.html">It Agency</a></li>
                                             <li><a href="it-company.html">Software Company</a></li>
                                             <li><a href="help-desk.html">Help Desk</a></li>
@@ -76,47 +76,47 @@
                                     </li>
                                     <li class="menu-item has-children"><a href="#">About</a>
                                         <ul class="sub-menu">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="career.html">Career</a></li>
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="{% url 'career' %}">Career</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item has-children"><a href="#">Services</a>
                                         <ul class="sub-menu">
-                                            <li><a href="service-1.html">Service O1</a></li>
+                                            <li><a href="{% url 'service1' %}">Service O1</a></li>
                                             <li><a href="service-2.html">Service 02</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
+                                            <li><a href="{% url 'serviceDetails' %}">Service Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item has-children"><a href="#">Case Studies</a>
                                         <ul class="sub-menu">
                                             <li><a href="project-1.html">Project O1</a></li>
-                                            <li><a href="project-2.html">Project 02</a></li>
+                                            <li><a href="{% url 'project2' %}">Project 02</a></li>
                                             <li><a href="project-3.html">Project 03</a></li>
                                             <li><a href="project-details.html">Project Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item has-children"><a href="#">Blog</a>
                                         <ul class="sub-menu">
-                                            <li><a href="blog-standard.html">Blog Standard</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                            <li><a href="{% url 'blog' %}">Blog Standard</a></li>
+                                            <li><a href="{% url 'blogDetails' %}">Blog Details</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item has-children"><a href="#">Pages</a>
                                         <ul class="sub-menu">
-                                            <li><a href="team.html">Our Team</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
+                                            <li><a href="{% url 'team' %}">Our Team</a></li>
+                                            <li><a href="{% url 'teamDetails' %}">Team Details</a></li>
                                             <li class="has-children"><a href="#">Our Shop</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="products.html">Products</a></li>
-                                                    <li><a href="product-details.html">Product Details</a></li>
+                                                    <li><a href="{% url 'products' %}">Products</a></li>
+                                                    <li><a href="{% url 'productDetails' %}">Product Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                            <li><a href="404.html">404</a></li>
+                                            <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                                            <li><a href="{% url 'faq' %}">FAQ</a></li>
+                                            <li><a href="{% url 'notFound' %}">404</a></li>
                                         </ul>
                                     </li>
-                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                                    <li class="menu-item"><a href="{% url 'contact' %}">Contact</a></li>
                                     <li class="search-item"><a href="#" data-toggle="modal" data-target="#search-modal"><i class="fas fa-search"></i></a></li>
                                 </ul>
                             </nav>
@@ -161,7 +161,7 @@
                                     doloreue laudantium totam rem aperiam eaque quae aitore 
                                     veritatis quasi architecto beatae vitae</p>
                                 <ul class="button">
-                                    <li><a href="about.html" class="main-btn btn-blue-dark">get started</a></li>
+                                    <li><a href="{% url 'about' %}" class="main-btn btn-blue-dark">get started</a></li>
                                     <li><a href="https://www.youtube.com/watch?v=vTm7t9JBGfM&t=39s" class="video-popup">
                                         <div class="icon">
                                             <i class="fas fa-play"></i>
@@ -204,7 +204,7 @@
                                 <p>Sed ut perspiciatis unde 
                                     oniste atus error volutatem
                                      accusu dolore lauda</p>
-                                <a href="service-1.html" class="btn-link">read more</a>
+                                <a href="{% url 'service1' %}" class="btn-link">read more</a>
                             </div>
                         </div>
                     </div>
@@ -218,7 +218,7 @@
                                 <p>Sed ut perspiciatis unde 
                                     oniste atus error volutatem
                                      accusu dolore lauda</p>
-                                <a href="service-1.html" class="btn-link">read more</a>
+                                <a href="{% url 'service1' %}" class="btn-link">read more</a>
                             </div>
                         </div>
                     </div>
@@ -232,7 +232,7 @@
                                 <p>Sed ut perspiciatis unde 
                                     oniste atus error volutatem
                                      accusu dolore lauda</p>
-                                <a href="service-1.html" class="btn-link">read more</a>
+                                <a href="{% url 'service1' %}" class="btn-link">read more</a>
                             </div>
                         </div>
                     </div>
@@ -246,7 +246,7 @@
                                 <p>Sed ut perspiciatis unde 
                                     oniste atus error volutatem
                                      accusu dolore lauda</p>
-                                <a href="service-1.html" class="btn-link">read more</a>
+                                <a href="{% url 'service1' %}" class="btn-link">read more</a>
                             </div>
                         </div>
                     </div>
@@ -411,7 +411,7 @@
                                 <div class="icon">
                                     <i class="flaticon-document"></i>
                                 </div>
-                                <h2 class="number"><span class="count">25630</span>+</h2>
+                                <h2 class="number"><span class="count">256</span>+</h2>
                                 <p>Happy Customer</p>
                             </div>
                         </div>
@@ -420,7 +420,7 @@
                                 <div class="icon">
                                     <i class="flaticon-rating"></i>
                                 </div>
-                                <h2 class="number"><span class="count">75646</span>+</h2>
+                                <h2 class="number"><span class="count">75</span>+</h2>
                                 <p>Happy Customer</p>
                             </div>
                         </div>
@@ -429,7 +429,7 @@
                                 <div class="icon">
                                     <i class="flaticon-dashboard-1"></i>
                                 </div>
-                                <h2 class="number"><span class="count">89634</span>+</h2>
+                                <h2 class="number"><span class="count">89</span>+</h2>
                                 <p>Happy Customer</p>
                             </div>
                         </div>
@@ -438,7 +438,7 @@
                                 <div class="icon">
                                     <i class="flaticon-trophy"></i>
                                 </div>
-                                <h2 class="number"><span class="count">96325</span>+</h2>
+                                <h2 class="number"><span class="count">9</span>+</h2>
                                 <p>Happy Customer</p>
                             </div>
                         </div>

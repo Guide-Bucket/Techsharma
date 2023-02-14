@@ -2,217 +2,110 @@
 {% extends 'base.html' %}
 {% load static %}
 
-    {% block meta %}
-    {% endblock %}
-    {% block CSS %}
-    {% endblock %}
-    {% block body %}
-        <!--====== Start Hero Section ======-->
-        <section class="hero-area">
-            <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(assets/images/bg/breadcrumbs-bg-1.jpg);">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="page-title-text text-center">
-                                <h1 class="title">Faqs</h1>
-                                <ul class="breadcrumbs-link">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li class="active">Faqs</li>
-                                </ul>
-                            </div>
-                        </div>
+{% block meta %}
+{% endblock %}
+{% block CSS %}
+{% endblock %}
+{% block body %}
+<!--====== Start Hero Section ======-->
+<section class="hero-area">
+    <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(static/images/bg/bcbg-faqs.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="page-title-text text-center">
+                        <h1 class="title">Faqs</h1>
+                        <ul class="breadcrumbs-link">
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li class="active">Faqs</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section><!--====== End Hero Section ======-->
-        <!--====== Start FAQ Section ======-->
-        <section class="faq-area faq-style-two pt-130 pb-80">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="faq-img mb-50">
-                            <img src="assets/images/features/faq-2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="faq-content-box mb-50">
-                            <div class="section-title mb-30">
-                                <span class="sub-title sub-title-bg blue-light-bg">Asked questions</span>
-                                <h2>Any Questions On Mind?
-                                Asked Questions</h2>
-                            </div>
-                            <div class="faq-accordian">
-                                <div class="accordion" id="accordianOne">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
-                                                Create An Engaging And Useful Chatbot
-                                            </a>
-                                        </div>
-                                        <div id="collapseOne" class="collapse show" data-parent="#accordianOne">
-                                            <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
-                                                Design To Developer-Friendly React Code
-                                            </a>
-                                        </div>
-                                        <div id="collapseTwo" class="collapse" data-parent="#accordianOne">
-                                            <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
-                                                Making Remote Work Work Useful
-                                            </a>
-                                        </div>
-                                        <div id="collapseThree" class="collapse" data-parent="#accordianOne">
-                                            <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
-                                                Obscure Mobile Design Techniques That Boost UX
-                                            </a>
-                                        </div>
-                                        <div id="collapseFour" class="collapse" data-parent="#accordianOne">
-                                            <div class="card-body">
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </div>
+</section>
+<!--====== End Hero Section ======-->
+<!--====== Start FAQ Section ======-->
+<section class="faq-area faq-style-two pt-130 pb-80">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="faq-img mb-50">
+                    <img src="{% static 'images/features/faqs.jpg' %}" alt="">
                 </div>
             </div>
-        </section><!--====== End FAQ Section ======-->
-        <!--====== Start FAQ Section ======-->
-        <section class="faq-area bg_cover pt-120 pb-130" style="background-image: url(assets/images/bg/block-bg-1.jpg);">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="section-title section-title-white text-center mb-50">
-                            <span class="sub-title blue-light-bg sub-title-bg">Asked questions</span>
-                            <h2>Any Questions On Mind? Asked Questions</h2>
-                        </div>
+            <div class="col-lg-6">
+                <div class="faq-content-box mb-50">
+                    <div class="section-title mb-30">
+                        <span class="sub-title sub-title-bg blue-light-bg">Asked questions</span>
+                        <h2>Any Questions On Mind?
+                            Asked Questions</h2>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="faq-accordian">
-                            <div class="accordion" id="accordianTwo">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true">
-                                            Gone Floating Labels & Green Lighthouse Scores
-                                        </a>
-                                    </div>
-                                    <div id="collapseFive" class="collapse show" data-parent="#accordianTwo">
-                                        <div class="card-body">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                        </div>
+                    <div class="faq-accordian">
+                        <div class="accordion" id="accordianOne">
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true">
+                                        What services does your IT company offer?
+                                    </a>
+                                </div>
+                                <div id="collapseOne" class="collapse show" data-parent="#accordianOne">
+                                    <div class="card-body">
+                                        <p>Our IT company offers a wide range of services, including website
+                                            development, software implementation, IT support and consulting, and more.
+                                            We have a team of skilled professionals who are experienced in a variety of
+                                            technologies and can help your business succeed in today's fast-paced and
+                                            constantly evolving tech landscape.</p>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false">
-                                            Scraping Websites With Node & Puppeteer
-                                        </a>
-                                    </div>
-                                    <div id="collapseSix" class="collapse" data-parent="#accordianTwo">
-                                        <div class="card-body">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                        </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false">
+                                        How do you ensure the quality of your services?
+                                    </a>
+                                </div>
+                                <div id="collapseTwo" class="collapse" data-parent="#accordianOne">
+                                    <div class="card-body">
+                                        <p>At our IT company, quality is our top priority. We have strict quality
+                                            control measures in place to ensure that all of our services meet the
+                                            highest standards. We also have a team of dedicated professionals who are
+                                            committed to delivering exceptional results to our clients.</p>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false">
-                                            Scraping Websites With Node & Puppeteer
-                                        </a>
-                                    </div>
-                                    <div id="collapseSeven" class="collapse" data-parent="#accordianTwo">
-                                        <div class="card-body">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                        </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="false">
+                                        What is your pricing structure?
+                                    </a>
+                                </div>
+                                <div id="collapseThree" class="collapse" data-parent="#accordianOne">
+                                    <div class="card-body">
+                                        <p>Our pricing structure varies depending on the specific services you are
+                                            interested in and the needs of your business. We offer flexible pricing
+                                            options and are happy to work with you to develop a package that meets your
+                                            budget and your business needs.</p>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false">
-                                            Obscure Mobile Design Techniques That Boost UX
-                                        </a>
-                                    </div>
-                                    <div id="collapseEight" class="collapse" data-parent="#accordianTwo">
-                                        <div class="card-body">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                        aria-expanded="false">
+                                        Do you offer ongoing support for your services?
+                                    </a>
                                 </div>
-                            </div> 
-                        </div>
-                    </div> 
-                    <div class="col-lg-6">
-                        <div class="faq-accordian">
-                            <div class="accordion" id="accordianThree">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false">
-                                            Gone Floating Labels & Green Lighthouse Scores
-                                        </a>
-                                    </div>
-                                    <div id="collapseNine" class="collapse" data-parent="#accordianThree">
-                                        <div class="card-body">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false">
-                                            UI Design Testing Tools I Use All The Time
-                                        </a>
-                                    </div>
-                                    <div id="collapseTen" class="collapse" data-parent="#accordianThree">
-                                        <div class="card-body">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true">
-                                            Focus And Click Handler React Component
-                                        </a>
-                                    </div>
-                                    <div id="collapseEleven" class="collapse show" data-parent="#accordianThree">
-                                        <div class="card-body">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false">
-                                            Gone Floating Labels & Green Lighthouse Scores
-                                        </a>
-                                    </div>
-                                    <div id="collapseThirteen" class="collapse" data-parent="#accordianThree">
-                                        <div class="card-body">
-                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium doloremque laudantium totam rem aperiam, eaque ipsa quae abillo inventore veritatis et quase</p>
-                                        </div>
+                                <div id="collapseFour" class="collapse" data-parent="#accordianOne">
+                                    <div class="card-body">
+                                        <p>Yes, we offer ongoing support for all of our services to ensure that our
+                                            clients have the resources and assistance they need to succeed. Our team is
+                                            always available to answer questions and provide support whenever it is
+                                            needed.</p>
                                     </div>
                                 </div>
                             </div>
@@ -220,77 +113,239 @@
                     </div>
                 </div>
             </div>
-        </section><!--====== End FAQ Section ======-->
-        <!--====== Start Contact Section ======-->
-        <section class="contact-area contact-style-three bg_cover pt-130 pb-80" style="background-image: url(assets/images/bg/testimonial-bg-1.jpg);"> 
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="contact-section-box">
-                            <div class="section-title mb-25">
-                                <span class="sub-title sub-title-bg blue-light-bg">Need help ?</span>
-                                <h2>Let’s Talk About IT
-                                    Solutions</h2>
+        </div>
+    </div>
+</section>
+<!--====== End FAQ Section ======-->
+<!--====== Start FAQ Section ======-->
+<section class="faq-area bg_cover pt-120 pb-130" style="background-image: url(static/images/bg/block-bg-1.jpg);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="section-title section-title-white text-center mb-50">
+                    <span class="sub-title blue-light-bg sub-title-bg">Asked questions</span>
+                    <h2>Any Questions On Mind? Asked Questions</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="faq-accordian">
+                    <div class="accordion" id="accordianTwo">
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true">
+                                    What is your process for communication and collaboration with clients?
+                                </a>
                             </div>
-                            <p>On the other hand denounce righteous indige
-                                ation and dislike men who are so beguiled and
-                                demoralized by the charms of pleasure of the moment blinded by desire</p>
-                            <ul class="social-link">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            </ul>
+                            <div id="collapseFive" class="collapse show" data-parent="#accordianTwo">
+                                <div class="card-body">
+                                    <p>We believe that effective communication and collaboration are key to the success
+                                        of any project. We use a variety of tools and technologies to stay in touch with
+                                        our clients and ensure that everyone is on the same page.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseSix"
+                                    aria-expanded="false">
+                                    How do you ensure data security and privacy?
+                                </a>
+                            </div>
+                            <div id="collapseSix" class="collapse" data-parent="#accordianTwo">
+                                <div class="card-body">
+                                    <p>Data security and privacy are of the utmost importance to us. We use a variety of
+                                        measures, including encryption and secure servers, to protect our clients' data.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseSeven"
+                                    aria-expanded="false">
+                                    How can I get in touch with your team?
+                                </a>
+                            </div>
+                            <div id="collapseSeven" class="collapse" data-parent="#accordianTwo">
+                                <div class="card-body">
+                                    <p>You can contact our team through our website or by emailing us at
+                                        info@TechSharma.com. We're always happy to answer any questions you may have and
+                                        to discuss your project in more detail.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseEight"
+                                    aria-expanded="false">
+                                    What sets your company apart from others in the industry?
+                                </a>
+                            </div>
+                            <div id="collapseEight" class="collapse" data-parent="#accordianTwo">
+                                <div class="card-body">
+                                    <p>We pride ourselves on our commitment to quality and customer service. We have a
+                                        team of highly skilled and experienced professionals who are dedicated to
+                                        delivering top-quality solutions to our clients, and we work closely with our
+                                        clients throughout the project lifecycle to ensure that their needs are met.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="contact-wrapper">
-                            <form class="contact-form">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form_group">
-                                            <input type="text" class="form_control" placeholder="Full Name Here" name="name" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form_group">
-                                            <input type="email" class="form_control" placeholder="Email Address" name="email" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form_group">
-                                            <input type="url" class="form_control" placeholder="Website" name="website" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form_group">
-                                            <select class="wide">
-                                                <option value="01">Customer Support</option>
-                                                <option value="01">Customer Support</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="faq-accordian">
+                    <div class="accordion" id="accordianThree">
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseNine"
+                                    aria-expanded="false">
+                                    How do you approach projects?
+                                </a>
+                            </div>
+                            <div id="collapseNine" class="collapse" data-parent="#accordianThree">
+                                <div class="card-body">
+                                    <p>We follow a structured and systematic approach to every project. We begin by
+                                        working closely with our clients to understand their goals and objectives, and
+                                        we use this information to develop a customized plan of action. From there, we
+                                        use a combination of agile and waterfall methodologies to ensure that our
+                                        projects are delivered on time and on budget.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTen"
+                                    aria-expanded="false">
+                                    How do you handle customer support?
+                                </a>
+                            </div>
+                            <div id="collapseTen" class="collapse" data-parent="#accordianThree">
+                                <div class="card-body">
+                                    <p>We take customer support very seriously, and we have a dedicated team of
+                                        professionals who are available to assist our clients with any questions or
+                                        issues they may have. Whether you need help with a technical issue or have a
+                                        question about one of our services, we're here to help.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseEleven"
+                                    aria-expanded="true">
+                                    What technologies do you use?
+                                </a>
+                            </div>
+                            <div id="collapseEleven" class="collapse show" data-parent="#accordianThree">
+                                <div class="card-body">
+                                    <p>Our team is skilled in a variety of technologies, including programming languages
+                                        like Java, go and Python, as well as databases and software development
+                                        frameworks.
+                                        We use the best tools and technologies for each project to ensure the best
+                                        possible results.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThirteen"
+                                    aria-expanded="false">
+                                    How do I stay up-to-date on the latest products and services offered by your
+                                    company?
+                                </a>
+                            </div>
+                            <div id="collapseThirteen" class="collapse" data-parent="#accordianThree">
+                                <div class="card-body">
+                                    <p>Sign up for our newsletter: We send out regular newsletters to our clients and
+                                        subscribers that highlight new products and services, as well as any special
+                                        promotions or discounts that we are currently offering.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End FAQ Section ======-->
+<!--====== Start Contact Section ======-->
+<section class="contact-area contact-style-three bg_cover pt-130 pb-80"
+    style="background-image: url(static/images/bg/testimonial-bg-1.jpg);">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="contact-section-box">
+                    <div class="section-title mb-25">
+                        <span class="sub-title sub-title-bg blue-light-bg">Need help ?</span>
+                        <h2>Let’s Talk About IT
+                            Solutions</h2>
+                    </div>
+                    <p>On the other hand denounce righteous indige
+                        ation and dislike men who are so beguiled and
+                        demoralized by the charms of pleasure of the moment blinded by desire</p>
+                    <ul class="social-link">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="contact-wrapper">
+                    <form class="contact-form" action="{% url 'saveInfo' %}" method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="text" class="form_control" placeholder="Full Name Here" name="name"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="text" class="form_control" placeholder="Phone Number" name="phone"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="email" class="form_control" placeholder="Email Address" name="email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="url" class="form_control" placeholder="Website" name="website"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form_group">
+                                    <textarea class="form_control" placeholder="Write Message" name="message"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form_group">
                                     <div class="col-lg-12">
-                                        <div class="form_group">
-                                            <textarea class="form_control" placeholder="Write Message" name="message" required></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form_group">
-                                            <div class="col-lg-12">
-                                                <button class="main-btn btn-purple">Get free consultations</button>
-                                            </div>
-                                        </div>
+                                        <button class="main-btn btn-purple">Get free consultations</button>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
-        </section><!--====== End Contact Section ======-->
-        {% endblock %}
-        <!--====== script ======-->
-        {% block script %}
-        
-        {% endblock %}
+        </div>
+    </div>
+</section>
+<!--====== End Contact Section ======-->
+{% endblock %}
+<!--====== script ======-->
+{% block script %}
+
+{% endblock %}

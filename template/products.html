@@ -9,14 +9,14 @@
     {% block body %}
         <!--====== Start Hero Section ======-->
         <section class="hero-area">
-            <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(assets/images/bg/breadcrumbs-bg-1.jpg);">
+            <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(static/images/bg/breadcrumbs-bg-1.jpg);">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="page-title-text text-center">
                                 <h1 class="title">Our Shop</h1>
                                 <ul class="breadcrumbs-link">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="{% url 'index' %}">Home</a></li>
                                     <li class="active">Shop</li>
                                 </ul>
                             </div>
@@ -55,35 +55,35 @@
                                 <ul class="recent-product-list">
                                     <li class="product-item">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/sm-thumb-1.jpg" alt="product image">
+                                            <img src="{% static 'images/products/sm-thumb-1.jpg' %}" alt="product image">
                                         </div>
                                         <div class="product-info">
                                             <h3 class="title">
-                                                <a href="product-details.html">Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Home Decore</a>
                                             </h3>
-                                            <a href="products.html" class="category">Smart Watch</a>
+                                            <a href="{% url 'products' %}" class="category">Smart Watch</a>
                                         </div>
                                     </li>
                                     <li class="product-item">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/sm-thumb-2.jpg" alt="product image">
+                                            <img src="{% static 'images/products/sm-thumb-2.jpg' %}" alt="product image">
                                         </div>
                                         <div class="product-info">
                                             <h3 class="title">
-                                                <a href="product-details.html">Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Home Decore</a>
                                             </h3>
-                                            <a href="products.html" class="category">Table Lamp</a>
+                                            <a href="{% url 'products' %}" class="category">Table Lamp</a>
                                         </div>
                                     </li>
                                     <li class="product-item">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/sm-thumb-3.jpg" alt="product image">
+                                            <img src="{% static 'images/products/sm-thumb-3.jpg' %}" alt="product image">
                                         </div>
                                         <div class="product-info">
                                             <h3 class="title">
-                                                <a href="product-details.html">Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Home Decore</a>
                                             </h3>
-                                            <a href="products.html" class="category">Men Shoe</a>
+                                            <a href="{% url 'products' %}" class="category">Men Shoe</a>
                                         </div>
                                     </li>
                                 </ul>
@@ -112,12 +112,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-1.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-1.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-1.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-1.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -130,7 +130,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97</span>
                                         </div>
@@ -139,12 +139,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-2.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-2.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-2.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-2.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -157,7 +157,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97</span>
                                         </div>
@@ -166,12 +166,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-3.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-3.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-3.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-3.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -184,7 +184,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97 <span class="pre-price">$10.35</span></span>
                                         </div>
@@ -193,12 +193,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-4.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-4.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-4.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-4.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -211,7 +211,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97 <span class="pre-price">$10.35</span></span>
                                         </div>
@@ -220,12 +220,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-5.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-5.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-5.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-5.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -238,7 +238,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97</span>
                                         </div>
@@ -247,12 +247,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-6.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-6.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-6.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-6.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -265,7 +265,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97</span>
                                         </div>
@@ -274,12 +274,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-7.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-7.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-7.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-7.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -292,7 +292,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97</span>
                                         </div>
@@ -301,12 +301,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-8.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-8.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-8.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-8.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -319,7 +319,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97</span>
                                         </div>
@@ -328,12 +328,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-9.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-9.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-9.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-9.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -346,7 +346,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97 <span class="pre-price">$10.35</span></span>
                                         </div>
@@ -355,12 +355,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-10.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-10.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-10.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-10.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -373,7 +373,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97</span>
                                         </div>
@@ -382,12 +382,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-11.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-11.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-11.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-11.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -400,7 +400,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97 <span class="pre-price">$10.35</span></span>
                                         </div>
@@ -409,12 +409,12 @@
                                 <div class="col-lg-4 col-md-6 col-sm-12">
                                     <div class="product-item mb-30">
                                         <div class="product-thumb">
-                                            <img src="assets/images/products/product-12.jpg" alt="product image">
+                                            <img src="{% static 'images/products/product-12.jpg' %}" alt="product image">
                                             <div class="product-overlay d-flex align-items-end justify-content-center">
                                                 <div class="product-meta">
                                                     <a href="#" class="icon cart-btn"><i class="far fa-shopping-cart"></i></a>
                                                     <a href="#" class="icon wishlist-btn"><i class="far fa-heart"></i></a>
-                                                    <a href="assets/images/products/product-12.jpg" class="icon img-popup"><i class="far fa-expand"></i></a>
+                                                    <a href="{% static 'images/products/product-12.jpg' %}" class="icon img-popup"><i class="far fa-expand"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -427,7 +427,7 @@
                                                 <li class="star"><i class="fas fa-star"></i></li>
                                             </ul>
                                             <h3 class="title">
-                                                <a href="product-details.html">Wood Home Decore</a>
+                                                <a href="{% url 'productDetails' %}">Wood Home Decore</a>
                                             </h3>
                                             <span class="price">$23.97 <span class="pre-price">$10.35</span></span>
                                         </div>

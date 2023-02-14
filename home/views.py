@@ -1,7 +1,7 @@
 from django.shortcuts import render, HttpResponseRedirect
-from home.models import info
+from home.models import InfoClass, EmailClass
 import pymongo
-from TSharma.settings import DB
+# from TSharma.settings import DB
 
 
 def index(request):
@@ -9,18 +9,22 @@ def index(request):
 
 def saveInfo(request):
     if request.method == "POST":
-        FullName= request.POST.get('name')
-        Phone = request.POST.get('Phone')
-        Message = request.POST.get('message')
-        Email = request.POST.get('email')
-        Website = request.POST.get('website')
-        infoModel=DB.users.insert_one({"firstName":FullName,"Phone":Phone,"email":Email,"website":Website,"description":Message})
+        fullName= request.POST.get('name')
+        phone = request.POST.get('Phone')
+        message = request.POST.get('message')
+        email = request.POST.get('email')
+        website = request.POST.get('website')
+        Info=InfoClass(firstName=fullName,phone=phone,email=email,website=website,message=message)
+        Info.save()
+        # infoModel=DB.users.insert_one({"firstName":FullName,"Phone":Phone,"email":Email,"website":Website,"description":Message})
     return render(request, "index.html")  
 
 def saveEmail(request):
     if request.method=="POST":
         email=request.POST.get('email')
-        saveEmail=DB.emailForNewsLeater.insert_one({'email':email})
+        emailForm=EmailClass(email=email)
+        emailForm.save()
+        # saveEmail=DB.emailForNewsLeater.insert_one({'email':email})
     return render(request, "index.html") 
 
 def about(request):

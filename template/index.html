@@ -2,243 +2,263 @@
 {% extends 'base.html' %}
 {% load static %}
 
-    {% block meta %}
-    {% endblock %}
-    {% block CSS %}
-    {% endblock %}
-    {% block body %}
-        <!--====== Start Hero Section ======-->
-        <section class="hero-area">
-            <div class="hero-wrapper-one hero-slider-one">
-                <div class="single-slider bg_cover" style="background-image: url(static/images/hero/hero-slider-1_1.jpg);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-lg-8">
-                                <div class="hero-content">
-                                    <span class="sub-title text-underline">professional it solutions</span>
-                                    <h1>Architecting, developing
-                                        and deploying enterprise
-                                        IT solutions</h1>
-                                    <ul class="button">
-                                        <li><a href="about.html" class="main-btn btn-red-dark">get started now</a></li>
-                                        <li><a href="service-details.html" class="main-btn btn-white">explore more</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slider bg_cover" style="background-image: url({{MEDIA_URL}}/images/hero/hero-slider-1_2.jpg);">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="hero-content text-center">
-                                    <span class="sub-title text-underline">professional it solutions</span>
-                                    <h1>Architecting, developing
-                                        and deploying enterprise
-                                        IT solutions</h1>
-                                    <ul class="button">
-                                        <li><a href="about.html" class="main-btn btn-red-dark">get started now</a></li>
-                                        <li><a href="service-details.html" class="main-btn btn-white">explore more</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-slider bg_cover" style="background-image: url(assets/images/hero/hero-slider-1_3.jpg);">
-                    <div class="container">
-                        <div class="row justify-content-end">
-                            <div class="col-lg-8">
-                                <div class="hero-content text-right">
-                                    <span class="sub-title text-underline">professional it solutions</span>
-                                    <h1>Architecting, developing
-                                        and deploying enterprise
-                                        IT solutions</h1>
-                                    <ul class="button">
-                                        <li><a href="about.html" class="main-btn btn-red-dark">get started now</a></li>
-                                        <li><a href="service-details.html" class="main-btn btn-white">explore more</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--====== End Hero Section ======-->
-        <!--====== Start Features Section ======-->
-        <section class="fancy-features">
-            <div class="continer-fluid p-0">
-                <div class="features-style-one pt-70 pb-30">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-6">
-                                <div class="section-title text-center mb-45">
-                                    <span class="sub-title red-dark text-underline">great journey for it solutions</span>
-                                    <h2 class="text-uppercase">specializes in building Services</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="block-style-one animate-icon d-flex mb-40">
-                                    <div class="icon">
-                                        <i class="flaticon-project-management"></i>
-                                    </div>
-                                    <div class="text">
-                                        <h3 class="title text-underline">Professional Service</h3>
-                                        <p>Sedut perspicias unde omnis natus error sit voluptatem accusanti remqu
-                                            laudantium totam rem aperiam</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="block-style-one animate-icon d-flex mb-40">
-                                    <div class="icon">
-                                        <i class="flaticon-social-care"></i>
-                                    </div>
-                                    <div class="text">
-                                        <h3 class="title text-underline">Experience Team</h3>
-                                        <p>Sedut perspicias unde omnis natus error sit voluptatem accusanti remqu
-                                            laudantium totam rem aperiam</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="block-style-one animate-icon d-flex mb-40">
-                                    <div class="icon">
-                                        <i class="flaticon-compliant"></i>
-                                    </div>
-                                    <div class="text">
-                                        <h3 class="title text-underline">Best IT Solutions</h3>
-                                        <p>Sedut perspicias unde omnis natus error sit voluptatem accusanti remqu
-                                            laudantium totam rem aperiam</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!--====== End Features Section ======-->
-        <!--====== Start About Section ======-->
-        <section class="fancy-about fancy-about-one pt-130 position-relative pb-45">
+{% block meta %}
+{% endblock %}
+{% block CSS %}
+{% endblock %}
+{% block body %}
+<!--====== Start Hero Section ======-->
+<section class="hero-area">
+    <div class="hero-wrapper-one hero-slider-one">
+        <div class="single-slider bg_cover" style="background-image: url(static/images/hero/home1.jpg);">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="about-img-box mb-50">
-                            <img src="assets/images/about/about-1.jpg" alt="About image">
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="text-wrapper mb-50">
-                            <div class="section-title mb-20">
-                                <span class="sub-title red-dark text-underline">who we are</span>
-                                <h2 class="text-transform">The Enterprise 
-                                    Productivity Platform 
-                                    for Complex Data</h2>
-                            </div>
-                            <p>Sed perspiciatis unde omnis iste natus voluptate accusantiuy 
-                                doloremque laudantium totam rem aperiam eaque quae ainvtore 
-                                veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut 
-                                fugit sed quia consequuntur magni dolores eos ratione volupta 
-                                seque nesciunt porro quisquam doloremdolor site</p>
-                            <a href="about.html" class="main-btn">learn more us</a>
+                <div class="row justify-content-start">
+                    <div class="col-lg-8">
+                        <div class="hero-content">
+                            <span class="sub-title text-underline">professional it solutions</span>
+                            <h1>Architecting, developing
+                                and deploying enterprise
+                                IT solutions</h1>
+                            <ul class="button">
+                                <li><a href="{% url 'about' %}" class="main-btn ">get started now</a></li>
+                                <li><a href="{% url 'serviceDetails' %}" class="main-btn btn-white">explore more</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!--====== End About Section ======-->
-        <!--====== Start Features Section ======-->
-        <section class="fancy-features light-gray-bg pt-120 pb-90">
+        </div>
+        <div class="single-slider bg_cover" style="background-image: url(static/images/hero/home2.jpg);">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="hero-content text-center">
+                            <span class="sub-title text-underline">professional it solutions</span>
+                            <h1>Architecting, developing
+                                and deploying enterprise
+                                IT solutions{{STATIC_URL}}</h1>
+                            <ul class="button">
+                                <li><a href="{% url 'about' %}" class="main-btn ">get started now</a></li>
+                                <li><a href="{% url 'serviceDetails' %}" class="main-btn btn-white">explore more</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-slider bg_cover" style="background-image: url(static/images/hero/home3.jpg);">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-8">
+                        <div class="hero-content text-right">
+                            <span class="sub-title text-underline">professional it solutions</span>
+                            <h1>Architecting, developing
+                                and deploying enterprise
+                                IT solutions</h1>
+                            <ul class="button">
+                                <li><a href="{% url 'about' %}" class="main-btn">get started now</a></li>
+                                <li><a href="{% url 'serviceDetails' %}" class="main-btn btn-white">explore more</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End Hero Section ======-->
+<!--====== Start Features Section ======-->
+<section class="fancy-features">
+    <div class="continer-fluid p-0">
+        <div class="features-style-one pt-70 pb-30">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="section-title text-center mb-45">
-                            <span class="sub-title red-dark text-underline">what we do</span>
-                            <h2 class="text-uppercase">Solutions Customers Have 
-                                Built with Instabase</h2>
+                            <span class="sub-title blue-dark text-underline">great journey for it solutions</span>
+                            <h2 class="text-uppercase">specializes in building Services</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                        <div class="block-style-two animate-icon mb-40">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="block-style-one animate-icon d-flex mb-40">
                             <div class="icon">
-                                <img src="assets/images/icon/icon-1.png" alt>
+                                <i class="flaticon-project-management"></i>
                             </div>
                             <div class="text">
-                                <h3 class="text-underline">Unlock trapped 
-                                    information</h3>
-                                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
+                                <h3 class="title text-underline">Professional Service</h3>
+                                <p>In-depth knowledge and expertise: Our team members have a wealth of knowledge and
+                                    expertise in their respective fields, which enables them to provide high-quality
+                                    products and services to our customers.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                        <div class="block-style-two animate-icon mb-40">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="block-style-one animate-icon d-flex mb-40">
                             <div class="icon">
-                                <img src="assets/images/icon/icon-2.png" alt>
+                                <i class="flaticon-social-care"></i>
                             </div>
                             <div class="text">
-                                <h3 class="text-underline">Build powerful 
-                                    solutions</h3>
-                                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
+                                <h3 class="title text-underline">Experience Team</h3>
+                                <p>At our IT company, we pride ourselves on having an experienced and knowledgeable
+                                    team. Our team members have a wide range of skills and expertise, and have a proven
+                                    track record of delivering high-quality products and services to our clients</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                        <div class="block-style-two animate-icon mb-40">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="block-style-one animate-icon d-flex mb-40">
                             <div class="icon">
-                                <img src="assets/images/icon/icon-3.png" alt>
+                                <i class="flaticon-compliant"></i>
                             </div>
                             <div class="text">
-                                <h3 class="text-underline">Accelerate at 
-                                    enterprise scale</h3>
-                                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                        <div class="block-style-two animate-icon mb-40">
-                            <div class="icon">
-                                <img src="assets/images/icon/icon-4.png" alt>
-                            </div>
-                            <div class="text">
-                                <h3 class="text-underline">Product & design
-                                    enginering</h3>
-                                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
+                                <h3 class="title text-underline">Best IT Solutions</h3>
+                                <p>At our company, we are proud to offer the best IT solutions in the industry. Our team
+                                    of experts is dedicated to providing innovative and reliable solutions that meet the
+                                    unique needs of our clients.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!--====== End Features Section ======-->
-        <!--====== Start CTA Section ======-->
-        <section class="cta-area cta-style-one bg_cover pt-70 pb-40" style="background-image: url(assets/images/bg/cta-bg-1.jpg);">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-9">
-                        <div class="cta-content mb-30">
-                            <h3 class="text-underline">Full Truckload Planning Reimagined Experts in Security
-                                Dynamic Load Planning & Dispatching</h3>
-                        </div>
+        </div>
+    </div>
+</section>
+<!--====== End Features Section ======-->
+<!--====== Start About Section ======-->
+<section class="fancy-about fancy-about-one pt-130 position-relative pb-45">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="about-img-box mb-50">
+                    <img src="{% static 'images/about/whoweare.jpg' %}" alt="About image">
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="text-wrapper mb-50">
+                    <div class="section-title mb-20">
+                        <span class="sub-title blue-dark text-underline">who we are</span>
+                        <h2 class="text-transform">using technology to solve problems and improve
+                            lives</h2>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="button float-lg-right float-md-none mb-30">
-                            <a href="about.html" class="main-btn">Let’s meet us</a>
-                        </div>
+                    <p>We believe that the right combination of innovative thinking and cutting-edge technology can make
+                        a real difference in the world, and we are passionate about using our skills and expertise to
+                        help our clients succeed.Our team is made up of highly skilled and knowledgeable professionals
+                        who are experts in their respective fields. We are constantly learning and staying up-to-date on
+                        the latest developments in the IT industry, so that we can provide our clients with the best
+                        possible solutions.s</p>
+                    <a href="{% url 'about' %}" class="main-btn">learn more us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End About Section ======-->
+<!--====== Start Features Section ======-->
+<section class="fancy-features light-gray-bg pt-120 pb-90">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center mb-45">
+                    <span class="sub-title blue-dark text-underline">what we do</span>
+                    <h2 class="text-uppercase">Solutions Customers Have
+                        Built with Instabase</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="block-style-two animate-icon mb-40">
+                    <div class="icon">
+                        <img src="{% static 'images/icon/icon-1.png' %}" alt>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">Unlock trapped
+                            information</h3>
+                        <p>if you're looking to unlock the trapped information that exists within your company, don't
+                            hesitate to reach out to us. We're ready to help you discover the insights and insights that
+                            can help your business succeed.</p>
                     </div>
                 </div>
             </div>
-        </section><!--====== End CTA Section ======-->
-        <!--====== Start Projects Section ======-->
-        <section class="portfolio-area pt-120 pb-125">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="block-style-two animate-icon mb-40">
+                    <div class="icon">
+                        <img src="{% static 'images/icon/icon-2.png' %}" alt>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">Build powerful
+                            solutions</h3>
+                        <p>if you're looking to build powerful solutions that drive your business forward, look no
+                            further. Our team is ready to help you take your vision to the next level.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="block-style-two animate-icon mb-40">
+                    <div class="icon">
+                        <img src="{% static 'images/icon/icon-3.png' %}" alt>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">Accelerate at
+                            enterprise scale</h3>
+                        <p>As a company, we are dedicated to helping businesses accelerate at enterprise scale. We
+                            understand the unique challenges and opportunities that come with growing a business, and we
+                            have the tools and expertise to help you succeed.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="block-style-two animate-icon mb-40">
+                    <div class="icon">
+                        <img src="{% static 'images/icon/icon-4.png' %}" alt>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">Product & design
+                            enginering</h3>
+                        <p>Our passion for design and engineering is reflected in everything we do, and we pride
+                            ourselves on our ability to turn complex ideas into tangible, real-world products that
+                            exceed our clients' expectations. So if you're looking for a partner to help you bring your
+                            product ideas to life, look no further. We're here to help you succeed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End Features Section ======-->
+<!--====== Start CTA Section ======-->
+<section class="cta-area cta-style-one bg_cover pt-70 pb-40"
+    style="background-image: url(static/images/bg/CTA-BG1.jpg);">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-9">
+                <div class="cta-content mb-30">
+                    <h3 class="text-underline">Full Truckload Planning Reimagined Experts in Security
+                        Dynamic Load Planning & Dispatching</h3>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="button float-lg-right float-md-none mb-30">
+                    <a href="{% url 'about' %}" class="main-btn">Let’s meet us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End CTA Section ======-->
+<!--====== Start Projects Section ======-->
+<!-- <section class="portfolio-area pt-120 pb-125">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
                         <div class="section-title text-center mb-45">
-                            <span class="sub-title red-dark">latest Case Studies</span>
+                            <span class="sub-title blue-dark">latest Case Studies</span>
                             <h2 class="text-uppercase">over 15 years, customers have 
                                 Come to IT solutions.</h2>
                         </div>
@@ -247,7 +267,7 @@
                 <div class="portfolio-slider-one">
                     <div class="portfolio-block-one">
                         <div class="portfolio-img">
-                            <img src="assets/images/projects/project-1.jpg" alt="project image">
+                            <img src="{% static 'images/projects/project-1.jpg' %}" alt="project image">
                         </div>
                         <div class="portfolio-content">
                             <a href="project-1.html" class="cat-btn">product design</a>
@@ -258,7 +278,7 @@
                     </div>
                     <div class="portfolio-block-one">
                         <div class="portfolio-img">
-                            <img src="assets/images/projects/project-2.jpg" alt="project image">
+                            <img src="{% static 'images/projects/project-2.jpg' %}" alt="project image">
                         </div>
                         <div class="portfolio-content">
                             <a href="project-1.html" class="cat-btn">product design</a>
@@ -270,7 +290,7 @@
                     </div>
                     <div class="portfolio-block-one">
                         <div class="portfolio-img">
-                            <img src="assets/images/projects/project-3.jpg" alt="project image">
+                            <img src="{% static 'images/projects/project-3.jpg' %}" alt="project image">
                         </div>
                         <div class="portfolio-content">
                             <a href="project-1.html" class="cat-btn">product design</a>
@@ -281,7 +301,7 @@
                     </div>
                     <div class="portfolio-block-one">
                         <div class="portfolio-img">
-                            <img src="assets/images/projects/project-2.jpg" alt="project image">
+                            <img src="{% static 'images/projects/project-2.jpg' %}" alt="project image">
                         </div>
                         <div class="portfolio-content">
                             <a href="project-1.html" class="cat-btn">product design</a>
@@ -293,137 +313,154 @@
                     </div>
                 </div>
             </div>
-        </section><!--====== End Projects Section ======-->
-        <!--====== Start Service Section ======-->
-        <section class="clients-area clients-style-one light-gray-bg pt-70 pb-80 clients-map">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="section-title text-center mb-45">
-                            <span class="sub-title red-dark">popular partners</span>
-                            <h2 class="text-uppercase">We have <span class="red-dark">2563+</span> world wide clients</h2>
-                        </div>
+        </section> -->
+<!--====== End Projects Section ======-->
+<!--====== Start Service Section ======-->
+<section class="clients-area clients-style-one light-gray-bg pt-70 pb-80 clients-map">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="section-title text-center mb-45">
+                    <span class="sub-title blue-dark">popular partners</span>
+                    <h2 class="text-uppercase">We have <span class="blue-dark">25+</span> world wide clients</h2>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="clients-wrapper">
+            <div class="clients-slider-one">
+                <div class="client-item">
+                    <div class="client-img">
+                        <img src="{% static 'images/clients/01.png' %}" alt="clients image">
                     </div>
                 </div>
-                <div class="clients-wrapper">
-                    <div class="clients-slider-one">
-                        <div class="client-item">
-                            <div class="client-img">
-                                <img src="assets/images/clients/01.png" alt="clients image">
+                <div class="client-item">
+                    <div class="client-img">
+                        <img src="{% static 'images/clients/02.png' %}" alt="clients image">
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-img">
+                        <img src="{% static 'images/clients/03.png' %}" alt="clients image">
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-img">
+                        <img src="{% static 'images/clients/04.png' %}" alt="clients image">
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-img">
+                        <img src="{% static 'images/clients/05.png' %}" alt="clients image">
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-img">
+                        <img src="{% static 'images/clients/06.png' %}" alt="clients image">
+                    </div>
+                </div>
+                <div class="client-item">
+                    <div class="client-img">
+                        <img src="{% static 'images/clients/03.png' %}" alt="clients image">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+<!--====== End Service Section ======-->
+<!--====== Start Service Section ======-->
+<section class="service-area dark-black-bg pt-130 pb-130">
+    <div class="container">
+        <div class="row align-items-center service-style-one">
+            <div class="col-lg-4">
+                <div class="text-wrapper mb-40">
+                    <div class="section-title section-title-white mb-20">
+                        <span class="sub-title blue-dark text-underline">Our popular services</span>
+                        <h2 class="text-uppercase">Best Professional
+                            IT Solutiuons
+                        </h2>
+                    </div>
+                    <p>We understand that every business has unique IT needs, and we work closely with our clients to
+                        develop custom solutions that meet their specific requirements.</p>
+                    <a href="{% url 'service1' %}" class="main-btn">explore more services</a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="service-wrapper">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <div class="block-style-three animate-icon border-right-1">
+                                <div class="icon">
+                                    <i class=" flaticon-development"></i>
+                                </div>
+                                <div class="text">
+                                    <h3 class="title"><a href="{% url 'serviceDetails' %}"
+                                            class="text-underline">Development</a></h3>
+                                    <p>development is at the heart of everything we do. We have a team of highly skilled
+                                        and experienced developers who are dedicated to creating innovative solutions
+                                        that meet the needs of our clients.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="client-item">
-                            <div class="client-img">
-                                <img src="assets/images/clients/02.png" alt="clients image">
+                        <div class="col-md-6">
+                            <div class="block-style-three animate-icon pr-lg-0">
+                                <div class="icon">
+                                    <i class="flaticon-product-development"></i>
+                                </div>
+                                <div class="text">
+                                    <h3 class="title"><a href="{% url 'serviceDetails' %}"
+                                            class="text-underline">Product
+                                            Development</a></h3>
+                                    <p>Our product development process starts with a thorough understanding of our
+                                        clients needs and goals. We work closely with them to define the scope and
+                                        requirements of the project, and we use our expertise to identify the most
+                                        effective and efficient solutions.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="client-item">
-                            <div class="client-img">
-                                <img src="assets/images/clients/03.png" alt="clients image">
+                        <div class="col-md-6">
+                            <div class="block-style-three animate-icon border-right-1">
+                                <div class="icon">
+                                    <i class="flaticon-web-design"></i>
+                                </div>
+                                <div class="text">
+                                    <h3 class="title"><a href="{% url 'serviceDetails' %}" class="text-underline">Web
+                                            design</a></h3>
+                                    <p>As an IT company, we know firsthand the importance of having a well-designed
+                                        website. A website is often the first point of contact that potential clients
+                                        and customers have with your business, and it's crucial that it makes a good
+                                        impression.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="client-item">
-                            <div class="client-img">
-                                <img src="assets/images/clients/04.png" alt="clients image">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                            <div class="client-img">
-                                <img src="assets/images/clients/05.png" alt="clients image">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                            <div class="client-img">
-                                <img src="assets/images/clients/06.png" alt="clients image">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                            <div class="client-img">
-                                <img src="assets/images/clients/03.png" alt="clients image">
+                        <div class="col-md-6">
+                            <div class="block-style-three animate-icon pr-lg-0">
+                                <div class="icon">
+                                    <i class="flaticon-mobile-app"></i>
+                                </div>
+                                <div class="text">
+                                    <h3 class="title"><a href="{% url 'serviceDetails' %}" class="text-underline">Apps
+                                            Development</a></h3>
+                                    <p>if you're looking for a reliable and experienced IT company to partner with for
+                                        your app development needs, look no further. We're here to help your business
+                                        succeed in the digital age.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!--====== End Service Section ======-->
-        <!--====== Start Service Section ======-->
-        <section class="service-area dark-black-bg pt-130 pb-130">
-            <div class="container">
-                <div class="row align-items-center service-style-one">
-                    <div class="col-lg-4">
-                        <div class="text-wrapper mb-40">
-                            <div class="section-title section-title-white mb-20">
-                                <span class="sub-title red-dark text-underline">Our popular services</span>
-                                <h2 class="text-uppercase">Best Professional
-                                    IT Solutiuons
-                                    </h2>
-                            </div>
-                            <p>Sed perspiciatis unde omniste natus voluptate 
-                                accusantiuy doloremque laudantium totam aperm
-                                eaque quae ainvtore veritatis architecto</p>
-                            <a href="service-1.html" class="main-btn">explore more services</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="service-wrapper">
-                            <div class="row no-gutters">
-                                <div class="col-md-6">
-                                    <div class="block-style-three animate-icon border-right-1">
-                                        <div class="icon">
-                                            <i class="flaticon-puzzle-1"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h3 class="title"><a href="service-details.html" class="text-underline">Infrastructure</a></h3>
-                                            <p>But I must explain to you how all this mistaken ideofe denouncing pleasure</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="block-style-three animate-icon pr-lg-0">
-                                        <div class="icon">
-                                            <i class="flaticon-solution-1"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h3 class="title"><a href="service-details.html" class="text-underline">IT Engineering</a></h3>
-                                            <p>But I must explain to you how all this mistaken ideofe denouncing pleasure</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="block-style-three animate-icon border-right-1">
-                                        <div class="icon">
-                                            <i class="flaticon-cyber-security"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h3 class="title"><a href="service-details.html" class="text-underline">cyber security</a></h3>
-                                            <p>But I must explain to you how all this mistaken ideofe denouncing pleasure</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="block-style-three animate-icon pr-lg-0">
-                                        <div class="icon">
-                                            <i class="flaticon-internet-of-things"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h3 class="title"><a href="service-details.html" class="text-underline">Apps Development</a></h3>
-                                            <p>But I must explain to you how all this mistaken ideofe denouncing pleasure</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!--====== End Service Section ======-->
-        <!--====== Start Team Section ======-->
-        <section class="team-area team-style-one pb-130 pt-120">
+        </div>
+    </div>
+</section>
+<!--====== End Service Section ======-->
+<!--====== Start Team Section ======-->
+<!-- <section class="team-area team-style-one pb-130 pt-120">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="section-title text-center mb-45">
-                            <span class="sub-title text-underline red-dark">meet our team</span>
+                            <span class="sub-title text-underline blue-dark">meet our team</span>
                             <h2 class="text-uppercase">let’s talk our professional 
                                 team members</h2>
                         </div>
@@ -433,10 +470,10 @@
                     <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
                         <div class="team-item mb-50">
                             <div class="team-img">
-                                <img src="assets/images/team/img_1.jpg" alt="Team img">
+                                <img src="{% static 'images/team/img_1.jpg' %}" alt="Team img">
                                 <div class="team-overlay">
                                     <div class="team-content">
-                                        <h6 class="title"><a href="team-details.html">James E. Villegas</a></h6>
+                                        <h6 class="title"><a href="{% url 'teamDetails' %}">James E. Villegas</a></h6>
                                         <p class="position">Senior Engineer</p>
                                         <ul class="social-link">
                                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -451,10 +488,10 @@
                     <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
                         <div class="team-item mb-50">
                             <div class="team-img">
-                                <img src="assets/images/team/img_2.jpg" alt="Team img">
+                                <img src="{% static 'images/team/img_2.jpg' %}" alt="Team img">
                                 <div class="team-overlay">
                                     <div class="team-content">
-                                        <h6 class="title"><a href="team-details.html">Timothy B. Garcia</a></h6>
+                                        <h6 class="title"><a href="{% url 'teamDetails' %}">Timothy B. Garcia</a></h6>
                                         <p class="position">Senior Engineer</p>
                                         <ul class="social-link">
                                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -469,10 +506,10 @@
                     <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
                         <div class="team-item mb-50">
                             <div class="team-img">
-                                <img src="assets/images/team/img_3.jpg" alt="Team img">
+                                <img src="{% static 'images/team/img_3.jpg' %}" alt="Team img">
                                 <div class="team-overlay">
                                     <div class="team-content">
-                                        <h6 class="title"><a href="team-details.html">Brian H. Rodriguez</a></h6>
+                                        <h6 class="title"><a href="{% url 'teamDetails' %}">Brian H. Rodriguez</a></h6>
                                         <p class="position">Senior Engineer</p>
                                         <ul class="social-link">
                                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -487,10 +524,10 @@
                     <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
                         <div class="team-item mb-50">
                             <div class="team-img">
-                                <img src="assets/images/team/img_4.jpg" alt="Team img">
+                                <img src="{% static 'images/team/img_4.jpg' %}" alt="Team img">
                                 <div class="team-overlay">
                                     <div class="team-content">
-                                        <h6 class="title"><a href="team-details.html">Donald N. Souciee</a></h6>
+                                        <h6 class="title"><a href="{% url 'teamDetails' %}">Donald N. Souciee</a></h6>
                                         <p class="position">Senior Engineer</p>
                                         <ul class="social-link">
                                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -505,10 +542,10 @@
                     <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
                         <div class="team-item mb-50">
                             <div class="team-img">
-                                <img src="assets/images/team/img_5.jpg" alt="Team img">
+                                <img src="{% static 'images/team/img_5.jpg' %}" alt="Team img">
                                 <div class="team-overlay">
                                     <div class="team-content">
-                                        <h6 class="title"><a href="team-details.html">Morris A. Savador</a></h6>
+                                        <h6 class="title"><a href="{% url 'teamDetails' %}">Morris A. Savador</a></h6>
                                         <p class="position">Senior Engineer</p>
                                         <ul class="social-link">
                                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -523,10 +560,10 @@
                     <div class="col-xl-2 col-lg-4 col-md-4 col-sm-12">
                         <div class="team-item mb-50">
                             <div class="team-img">
-                                <img src="assets/images/team/img_6.jpg" alt="Team img">
+                                <img src="{% static 'images/team/img_6.jpg' %}" alt="Team img">
                                 <div class="team-overlay">
                                     <div class="team-content">
-                                        <h6 class="title"><a href="team-details.html">James E. Villegas</a></h6>
+                                        <h6 class="title"><a href="{% url 'teamDetails' %}">James E. Villegas</a></h6>
                                         <p class="position">Senior Engineer</p>
                                         <ul class="social-link">
                                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -542,63 +579,66 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
                         <div class="notification-box">
-                            <h5><span><img src="assets/images/notification.png" alt="Bell Image"></span> Become a Team Member With Our Company</h5>
+                            <h5><span><img src="{% static 'images/notification.png' %}" alt="Bell Image"></span> Become a Team Member With Our Company</h5>
                             <a href="#" class="main-btn main-btn-sm">join with us</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!--====== End Team Section ======-->
-        <!--====== Start Counter Section ======-->
-        <section class="counter-area counter-style-one bg_cover pt-80 pb-30" style="background-image: url(assets/images/bg/counter-bg-1.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="counter-item text-center mb-40">
-                            <div class="icon">
-                                <i class="flaticon-document"></i>
-                            </div>
-                            <h2 class="number"><span class="count">25630</span>+</h2>
-                            <p>Happy Customer</p>
-                        </div>
+        </section> -->
+<!--====== End Team Section ======-->
+<!--====== Start Counter Section ======-->
+<section class="counter-area counter-style-one bg_cover pt-80 pb-30"
+    style="background-image: url(static/images/bg/bcbg-2.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="counter-item text-center mb-40">
+                    <div class="icon">
+                        <i class="flaticon-document"></i>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="counter-item text-center mb-40">
-                            <div class="icon">
-                                <i class="flaticon-rating"></i>
-                            </div>
-                            <h2 class="number"><span class="count">75646</span>+</h2>
-                            <p>Star Work Reviews</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="counter-item text-center mb-40">
-                            <div class="icon">
-                                <i class="flaticon-dashboard-1"></i>
-                            </div>
-                            <h2 class="number"><span class="count">89634</span>+</h2>
-                            <p>Project Complate</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="counter-item text-center mb-40">
-                            <div class="icon">
-                                <i class="flaticon-trophy"></i>
-                            </div>
-                            <h2 class="number"><span class="count">96325</span>+</h2>
-                            <p>Win Of Awards</p>
-                        </div>
-                    </div>
+                    <h2 class="number"><span class="count">256</span>+</h2>
+                    <p>Happy Customer</p>
                 </div>
             </div>
-        </section><!--====== End Counter Section ======-->
-        <!--====== Start Pricing Section ======-->
-        <section class="pricing-area pricing-style-one light-gray-bg pt-120 pb-100">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="counter-item text-center mb-40">
+                    <div class="icon">
+                        <i class="flaticon-rating"></i>
+                    </div>
+                    <h2 class="number"><span class="count">75</span>+</h2>
+                    <p>Star Work Reviews</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="counter-item text-center mb-40">
+                    <div class="icon">
+                        <i class="flaticon-dashboard-1"></i>
+                    </div>
+                    <h2 class="number"><span class="count">89</span>+</h2>
+                    <p>Project Complate</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="counter-item text-center mb-40">
+                    <div class="icon">
+                        <i class="flaticon-trophy"></i>
+                    </div>
+                    <h2 class="number"><span class="count">9</span>+</h2>
+                    <p>Win Of Awards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End Counter Section ======-->
+<!--====== Start Pricing Section ======-->
+<!-- <section class="pricing-area pricing-style-one light-gray-bg pt-120 pb-100">
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-6">
                         <div class="section-title mb-55">
-                            <span class="sub-title red-dark text-underline">Awesome pricing plan</span>
+                            <span class="sub-title blue-dark text-underline">Awesome pricing plan</span>
                             <h2 class="text-uppercase">we provide an smart pricing 
                                 package for it solutions</h2>
                         </div>
@@ -640,7 +680,7 @@
                                             <li class="uncheck">Social Media Integration</li>
                                             <li class="uncheck">Unlimited Features</li>
                                         </ul>
-                                        <a href="pricing.html" class="main-btn">Choose this pricing</a>
+                                        <a href="{% url 'pricing' %}" class="main-btn">Choose this pricing</a>
                                     </div>
                                 </div>
                             </div>
@@ -665,7 +705,7 @@
                                             <li class="check">Social Media Integration</li>
                                             <li class="check">Unlimited Features</li>
                                         </ul>
-                                        <a href="pricing.html" class="main-btn">Choose this pricing</a>
+                                        <a href="{% url 'pricing' %}" class="main-btn">Choose this pricing</a>
                                     </div>
                                 </div>
                             </div>
@@ -690,7 +730,7 @@
                                             <li class="check">Social Media Integration</li>
                                             <li class="check">Unlimited Features</li>
                                         </ul>
-                                        <a href="pricing.html" class="main-btn">Choose this pricing</a>
+                                        <a href="{% url 'pricing' %}" class="main-btn">Choose this pricing</a>
                                     </div>
                                 </div>
                             </div>
@@ -719,7 +759,7 @@
                                             <li class="uncheck">Social Media Integration</li>
                                             <li class="uncheck">Unlimited Features</li>
                                         </ul>
-                                        <a href="pricing.html" class="main-btn">Choose this pricing</a>
+                                        <a href="{% url 'pricing' %}" class="main-btn">Choose this pricing</a>
                                     </div>
                                 </div>
                             </div>
@@ -744,7 +784,7 @@
                                             <li class="check">Social Media Integration</li>
                                             <li class="check">Unlimited Features</li>
                                         </ul>
-                                        <a href="pricing.html" class="main-btn">Choose this pricing</a>
+                                        <a href="{% url 'pricing' %}" class="main-btn">Choose this pricing</a>
                                     </div>
                                 </div>
                             </div>
@@ -769,7 +809,7 @@
                                             <li class="check">Social Media Integration</li>
                                             <li class="check">Unlimited Features</li>
                                         </ul>
-                                        <a href="pricing.html" class="main-btn">Choose this pricing</a>
+                                        <a href="{% url 'pricing' %}" class="main-btn">Choose this pricing</a>
                                     </div>
                                 </div>
                             </div>
@@ -777,14 +817,15 @@
                     </div>
                 </div>
             </div>
-        </section><!--====== End Pricing Section ======-->
-        <!--====== Start Blog Section ======-->
-        <section class="blog-area blog-style-one pt-120 pb-90">
+        </section> -->
+<!--====== End Pricing Section ======-->
+<!--====== Start Blog Section ======-->
+<!-- <section class="blog-area blog-style-one pt-120 pb-90">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5">
                         <div class="section-title text-center mb-50">
-                            <span class="sub-title text-underline red-dark">Latest news & Blog</span>
+                            <span class="sub-title text-underline blue-dark">Latest news & Blog</span>
                             <h2 class="text-uppercase">Get every single update
                                 article & tipes</h2>
                         </div>
@@ -794,12 +835,12 @@
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="blog-post-item mb-40">
                             <div class="post-thumbnail">
-                                <img src="assets/images/blog/1.jpg" alt="Blog Image">
+                                <img src="{% static 'images/blog/1.jpg' %}" alt="Blog Image">
                             </div>
                             <div class="entry-content">
                                 <div class="b-user-admin d-flex justify-content-end">
                                     <a href="#" class="d-inline-flex align-items-center">
-                                        <div class="thumb"><img src="assets/images/blog/user-1.jpg" alt="USer Image"></div>
+                                        <div class="thumb"><img src="{% static 'images/blog/user-1.jpg' %}" alt="USer Image"></div>
                                         <span>Washington</span>
                                     </a>
                                 </div>
@@ -809,22 +850,22 @@
                                         <li><span><i class="far fa-comments"></i><a href="#">Comments (05)</a></span></li>
                                     </ul>
                                 </div>
-                                <h3 class="title"><a href="blog-details.html" class="text-underline">Build Launch Powerful Responsives 
+                                <h3 class="title"><a href="{% url 'blogDetails' %}" class="text-underline">Build Launch Powerful Responsives 
                                     Websites With Editor Perfect</a></h3>
                                 <p>Sed ut perspiciatis unde omnsiste natus errors voluptatem accusantium doloremque laudatium totae rem aperiam eaque quae abillo</p>
-                                <a href="blog-details.html" class="main-btn filled-btn">read more</a>
+                                <a href="{% url 'blogDetails' %}" class="main-btn filled-btn">read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="blog-post-item mb-40">
                             <div class="post-thumbnail">
-                                <img src="assets/images/blog/2.jpg" alt="Blog Image">
+                                <img src="{% static 'images/blog/2.jpg' %}" alt="Blog Image">
                             </div>
                             <div class="entry-content">
                                 <div class="b-user-admin d-flex justify-content-end">
                                     <a href="#" class="d-inline-flex align-items-center">
-                                        <div class="thumb"><img src="assets/images/blog/user-2.jpg" alt="USer Image"></div>
+                                        <div class="thumb"><img src="{% static 'images/blog/user-2.jpg' %}" alt="USer Image"></div>
                                         <span>Washington</span>
                                     </a>
                                 </div>
@@ -834,21 +875,21 @@
                                         <li><span><i class="far fa-comments"></i><a href="#">Comments (05)</a></span></li>
                                     </ul>
                                 </div>
-                                <h3 class="title"><a href="blog-details.html" class="text-underline">Smashing Podcast Episode 36 With Miriam Suzanne Is Future</a></h3>
+                                <h3 class="title"><a href="{% url 'blogDetails' %}" class="text-underline">Smashing Podcast Episode 36 With Miriam Suzanne Is Future</a></h3>
                                 <p>Sed ut perspiciatis unde omnsiste natus errors voluptatem accusantium doloremque laudatium totae rem aperiam eaque quae abillo</p>
-                                <a href="blog-details.html" class="main-btn filled-btn">read more</a>
+                                <a href="{% url 'blogDetails' %}" class="main-btn filled-btn">read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="blog-post-item mb-40">
                             <div class="post-thumbnail">
-                                <img src="assets/images/blog/3.jpg" alt="Blog Image">
+                                <img src="{% static 'images/blog/3.jpg' %}" alt="Blog Image">
                             </div>
                             <div class="entry-content">
                                 <div class="b-user-admin d-flex justify-content-end">
                                     <a href="#" class="d-inline-flex align-items-center">
-                                        <div class="thumb"><img src="assets/images/blog/user-3.jpg" alt="USer Image"></div>
+                                        <div class="thumb"><img src="{% static 'images/blog/user-3.jpg' %}" alt="USer Image"></div>
                                         <span>Washington</span>
                                     </a>
                                 </div>
@@ -858,17 +899,18 @@
                                         <li><span><i class="far fa-comments"></i><a href="#">Comments (05)</a></span></li>
                                     </ul>
                                 </div>
-                                <h3 class="title"><a href="blog-details.html" class="text-underline">Meet Image Optimization New Smhing Book By Addy Osmanie</a></h3>
+                                <h3 class="title"><a href="{% url 'blogDetails' %}" class="text-underline">Meet Image Optimization New Smhing Book By Addy Osmanie</a></h3>
                                 <p>Sed ut perspiciatis unde omnsiste natus errors voluptatem accusantium doloremque laudatium totae rem aperiam eaque quae abillo</p>
-                                <a href="blog-details.html" class="main-btn filled-btn">read more</a>
+                                <a href="{% url 'blogDetails' %}" class="main-btn filled-btn">read more</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!--====== End Blog Section ======-->
-        {% endblock %}
-        <!--====== script ======-->
-        {% block script %}
-        
-        {% endblock %}
+        </section> -->
+<!--====== End Blog Section ======-->
+{% endblock %}
+<!--====== script ======-->
+{% block script %}
+
+{% endblock %}

@@ -90,12 +90,13 @@ DATABASES = {
         }
 }
 
-
+# client=MongoClient('mongodb+srv://'+ urllib.parse.quote_plus(config('USER'))+ ':'+ urllib.parse.quote_plus(config('PASSWORD')) +'@techsharma.c1qscx8.mongodb.net/?retryWrites=true&w=majority')
+# DB = client['TechSharma']
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+    # 'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },

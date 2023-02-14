@@ -9,14 +9,14 @@
     {% block body %}
         <!--====== Start Hero Section ======-->
         <section class="hero-area">
-            <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(assets/images/bg/breadcrumbs-bg-1.jpg);">
+            <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(static/images/bg/breadcrumbs-bg-1.jpg);">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="page-title-text text-center">
                                 <h1 class="title">Portfolio Details</h1>
                                 <ul class="breadcrumbs-link">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="{% url 'index' %}">Home</a></li>
                                     <li class="active">Portfolio Details</li>
                                 </ul>
                             </div>
@@ -32,11 +32,11 @@
                     <div class="portfolio-img">
                         <div class="row">
                             <div class="col-lg-7">
-                                <img src="assets/images/projects/project-single-1.jpg" class="mb-30" alt="">
+                                <img src="{% static 'images/projects/project-single-1.jpg' %}" class="mb-30" alt="">
                             </div>
                             <div class="col-lg-5">
-                                <img src="assets/images/projects/project-single-2.jpg" class="mb-30" alt="">
-                                <img src="assets/images/projects/project-single-3.jpg" class="mb-30" alt="">
+                                <img src="{% static 'images/projects/project-single-2.jpg' %}" class="mb-30" alt="">
+                                <img src="{% static 'images/projects/project-single-3.jpg' %}" class="mb-30" alt="">
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="img-box text-lg-right">
-                                        <img src="assets/images/projects/project-single-3.jpg" alt="">
+                                        <img src="{% static 'images/projects/project-single-3.jpg' %}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -185,7 +185,7 @@
                 <div class="recent-portfolio-slider">
                     <div class="portfolio-block-seven">
                         <div class="portfolio-img">
-                            <img src="assets/images/projects/project-17.jpg" alt="Image">
+                            <img src="{% static 'images/projects/project-17.jpg' %}" alt="Image">
                         </div>
                         <div class="portfolio-content">
                             <h3 class="title"><a href="project-details.html" class="text-underline">Web Development</a></h3>
@@ -194,7 +194,7 @@
                     </div>
                     <div class="portfolio-block-seven">
                         <div class="portfolio-img">
-                            <img src="assets/images/projects/project-18.jpg" alt="Image">
+                            <img src="{% static 'images/projects/project-18.jpg' %}" alt="Image">
                         </div>
                         <div class="portfolio-content">
                             <h3 class="title"><a href="project-details.html" class="text-underline">IT Solutions Consultations</a></h3>
@@ -203,7 +203,7 @@
                     </div>
                     <div class="portfolio-block-seven">
                         <div class="portfolio-img">
-                            <img src="assets/images/projects/project-19.jpg" alt="Image">
+                            <img src="{% static 'images/projects/project-19.jpg' %}" alt="Image">
                         </div>
                         <div class="portfolio-content">
                             <h3 class="title"><a href="project-details.html" class="text-underline">Product Engineering</a></h3>
@@ -212,7 +212,7 @@
                     </div>
                     <div class="portfolio-block-seven">
                         <div class="portfolio-img">
-                            <img src="assets/images/projects/project-20.jpg" alt="Image">
+                            <img src="{% static 'images/projects/project-20.jpg' %}" alt="Image">
                         </div>
                         <div class="portfolio-content">
                             <h3 class="title"><a href="project-details.html" class="text-underline">IT Solutions Consultations</a></h3>

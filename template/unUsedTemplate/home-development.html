@@ -21,8 +21,8 @@
                                     <li>Digital Marketing</li>
                                 </ul>
                                 <ul class="button">
-                                    <li><a href="index.html" class="main-btn btn-orange-dark">get started</a></li>
-                                    <li><a href="about.html" class="main-btn btn-blue-light">explore more</a></li>
+                                    <li><a href="{% url 'index' %}" class="main-btn btn-orange-dark">get started</a></li>
+                                    <li><a href="{% url 'about' %}" class="main-btn btn-blue-light">explore more</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                                 <i class="far fa-puzzle-piece"></i>
                             </div>
                             <div class="text">
-                                <h3 class="title"><a href="service-details.html">IT Consulting</a></h3>
+                                <h3 class="title"><a href="{% url 'serviceDetails' %}">IT Consulting</a></h3>
                                 <ul class="list">
                                     <li>Customer Experience</li>
                                     <li>Information Architecture</li>
@@ -72,7 +72,7 @@
                                 <i class="far fa-bezier-curve"></i>
                             </div>
                             <div class="text">
-                                <h3 class="title"><a href="service-details.html">Web Design</a></h3>
+                                <h3 class="title"><a href="{% url 'serviceDetails' %}">Web Design</a></h3>
                                 <ul class="list">
                                     <li>Customer Experience</li>
                                     <li>Information Architecture</li>
@@ -89,7 +89,7 @@
                                 <i class="far fa-mobile-alt"></i>
                             </div>
                             <div class="text">
-                                <h3 class="title"><a href="service-details.html">App Development</a></h3>
+                                <h3 class="title"><a href="{% url 'serviceDetails' %}">App Development</a></h3>
                                 <ul class="list">
                                     <li>Android App Development</li>
                                     <li>Iphone Development</li>
@@ -106,7 +106,7 @@
                                 <i class="far fa-laptop-code"></i>
                             </div>
                             <div class="text">
-                                <h3 class="title"><a href="service-details.html">Web Development</a></h3>
+                                <h3 class="title"><a href="{% url 'serviceDetails' %}">Web Development</a></h3>
                                 <ul class="list">
                                     <li>WordPress Themes</li>
                                     <li>Php Advance Support</li>
@@ -252,7 +252,7 @@
                                 </div>
                             </div>
                             <div class="team-content">
-                                <h3 class="title"><a href="team-details.html">Michael C. Skinner Silva</a></h3>
+                                <h3 class="title"><a href="{% url 'teamDetails' %}">Michael C. Skinner Silva</a></h3>
                                 <p class="position">Sr Web Designer</p>
                             </div>
                         </div>
@@ -273,7 +273,7 @@
                                 </div>
                             </div>
                             <div class="team-content">
-                                <h3 class="title"><a href="team-details.html">David George N. Butler</a></h3>
+                                <h3 class="title"><a href="{% url 'teamDetails' %}">David George N. Butler</a></h3>
                                 <p class="position">Sr Web Designer</p>
                             </div>
                         </div>
@@ -294,7 +294,7 @@
                                 </div>
                             </div>
                             <div class="team-content">
-                                <h3 class="title"><a href="team-details.html">Matthew M. Armstead</a></h3>
+                                <h3 class="title"><a href="{% url 'teamDetails' %}">Matthew M. Armstead</a></h3>
                                 <p class="position">Sr Web Designer</p>
                             </div>
                         </div>
@@ -635,9 +635,9 @@
                                         <li><span><i class="far fa-user-circle"></i><a href="#">Patrick Hopson</a></span></li>
                                     </ul>
                                 </div>
-                                <h3 class="title"><a href="blog-details.html">How To Port Your Web App To Microsoft</a></h3>
+                                <h3 class="title"><a href="{% url 'blogDetails' %}">How To Port Your Web App To Microsoft</a></h3>
                                 <p>Consectetur adipiscing elsed do eiusmod tempor incididunt labore et dolore magna</p>
-                                <a href="blog-details.html" class="btn-link">read more</a>
+                                <a href="{% url 'blogDetails' %}" class="btn-link">read more</a>
                             </div>
                         </div>
                     </div>
@@ -649,9 +649,9 @@
                                         <li><span><i class="far fa-user-circle"></i><a href="#">Patrick Hopson</a></span></li>
                                     </ul>
                                 </div>
-                                <h3 class="title"><a href="blog-details.html">Wall Papers For Bruary  Little Creativity</a></h3>
+                                <h3 class="title"><a href="{% url 'blogDetails' %}">Wall Papers For Bruary  Little Creativity</a></h3>
                                 <p>Consectetur adipiscing elsed do eiusmod tempor incididunt labore et dolore magna</p>
-                                <a href="blog-details.html" class="btn-link">read more</a>
+                                <a href="{% url 'blogDetails' %}" class="btn-link">read more</a>
                             </div>
                         </div>
                     </div>
@@ -663,10 +663,10 @@
                                         <li><span><i class="far fa-user-circle"></i><a href="#">Patrick Hopson</a></span></li>
                                     </ul>
                                 </div>
-                                <h3 class="title"><a href="blog-details.html">Designing Better Tools
+                                <h3 class="title"><a href="{% url 'blogDetails' %}">Designing Better Tools
                                     For Mobile User</a></h3>
                                 <p>Consectetur adipiscing elsed do eiusmod tempor incididunt labore et dolore magna</p>
-                                <a href="blog-details.html" class="btn-link">read more</a>
+                                <a href="{% url 'blogDetails' %}" class="btn-link">read more</a>
                             </div>
                         </div>
                     </div>
@@ -678,9 +678,9 @@
                                         <li><span><i class="far fa-user-circle"></i><a href="#">Patrick Hopson</a></span></li>
                                     </ul>
                                 </div>
-                                <h3 class="title"><a href="blog-details.html">Team’s Comm Uniction Age Remote Work</a></h3>
+                                <h3 class="title"><a href="{% url 'blogDetails' %}">Team’s Comm Uniction Age Remote Work</a></h3>
                                 <p>Consectetur adipiscing elsed do eiusmod tempor incididunt labore et dolore magna</p>
-                                <a href="blog-details.html" class="btn-link">read more</a>
+                                <a href="{% url 'blogDetails' %}" class="btn-link">read more</a>
                             </div>
                         </div>
                     </div>
