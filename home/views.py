@@ -1,17 +1,27 @@
-from django.shortcuts import render
-# from home.forms import ContactForm
-# Create your views here.
+from django.shortcuts import render, HttpResponseRedirect
+from home.models import info
+import pymongo
+from TSharma.settings import DB
 
 
 def index(request):
+        return render(request, "index.html")
+
+def saveInfo(request):
     if request.method == "POST":
-        fullName= request.POST['fullName']
-        Phone = request.POST['Phone']
-        message = request.POST['message']
-        Email = request.POST['Email'] #Using name of input
-        return render(request, "index.html")
-    else:
-        return render(request, "index.html")
+        FullName= request.POST.get('name')
+        Phone = request.POST.get('Phone')
+        Message = request.POST.get('message')
+        Email = request.POST.get('email')
+        Website = request.POST.get('website')
+        infoModel=DB.users.insert_one({"firstName":FullName,"Phone":Phone,"email":Email,"website":Website,"description":Message})
+    return render(request, "index.html")  
+
+def saveEmail(request):
+    if request.method=="POST":
+        email=request.POST.get('email')
+        saveEmail=DB.emailForNewsLeater.insert_one({'email':email})
+    return render(request, "index.html") 
 
 def about(request):
     return render(request, "about.html")
@@ -23,12 +33,6 @@ def blogDetails(request):
     return render(request, "blog-details.html")
 
 def contact(request):
-    # if request.method == 'POST':
-    #     form = ContactForm(request.POST)
-    #     if form.is_valid():
-    #         pass  # does nothing, just trigger the validation
-    # else:
-    #     form = ContactForm()
     return render(request, "contact.html")
 
 def pricing(request):

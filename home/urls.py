@@ -19,4 +19,6 @@ urlpatterns = [path("", views.index, name="index"),
                path("teamDetails", views.teamDetails, name="teamDetails"),
                path("team", views.team, name="team"),
                path("faq", views.faq, name="faq"),
+               path("saveInfo", views.saveInfo, name="saveInfo"),
+               path("saveEmail", views.saveEmail, name="saveEmail")
                ]
