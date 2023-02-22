@@ -1,0 +1,11 @@
+version: '3.10'
+
+services:
+  django:
+    build: .
+    image: TechSharma
+    command: gunicorn TSharma.wsgi:application
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
