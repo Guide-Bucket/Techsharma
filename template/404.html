@@ -8,7 +8,7 @@
     {% block body %}
         <!--====== Start Hero Section ======-->
         <section class="hero-area">
-            <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(static/images/bg/bcbg-notfound.jpg);">
+            <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(./../bg/bcbg-notfound.webp);">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -29,7 +29,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="error-content text-center">
-                            <img src="{% static 'images/notfound.jpg' %}" class="mb-50" alt="">
+                            <img src="{% static 'images/notfound.webp' %}" class="mb-50" alt="">
                             <h2>OPPS! This Page is Not Found</h2>
                             <p>Check the URL: Make sure that the URL you are trying to access is correct and spelled correctly.</p>
                             <a href="{% url 'index' %}" class="main-btn btn-blue-light">go to home</a>

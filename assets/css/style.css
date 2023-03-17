@@ -44,7 +44,7 @@
 /* Slick css */
 @import url(../vendor/slick/slick.css);
 /* Magnific css */
-@import url(../vendor/magnific-popup/dist/magnific-popup.css);
+@import url(../vendor/magnificPopup/dist/magnificPopup.css);
 /* Nice-select css */
 @import url(../vendor/nice-select/css/nice-select.css);
 /* Jquery css */
@@ -1765,7 +1765,7 @@ button {
     line-height: 35px;
 }
 .experience-box .year h2{
-    background: url(../images/about/about1.jpg) center;
+    background: url(../images/about/about1.webp) center;
     background-repeat: repeat;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -6032,7 +6032,7 @@ ul.ratings{
     content: '';
     width: 100%;
     height: 100%;
-    background: url(../images/blog/post-bg-1.jpg) no-repeat center;
+    background: url(../images/blog/post-bg-1.webp) no-repeat center;
     background-size: cover;
     z-index: -1;
 }
