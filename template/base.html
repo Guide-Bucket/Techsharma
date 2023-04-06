@@ -3,6 +3,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4DWPVDXSBX"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4DWPVDXSBX');
+    </script>
     <!--====== Required meta tags ======-->
     {% block meta %}
 
@@ -109,9 +118,9 @@
                                             <li><a href="home-development.html">Home Development</a></li>
                                         </ul> -->
                                 </li>
-                                <li class="menu-item "><a href="{% url 'service1' %}">Services</a>
+                                <li class="menu-item "><a href="{% url 'service' %}">Services</a>
                                     <!-- <ul class="sub-menu">
-                                            <li><a href="{% url 'service1' %}">Service O1</a></li>
+                                            <li><a href="{% url 'service' %}">Service O1</a></li>
                                             <li><a href="service-2.html">Service 02</a></li>
                                             <li><a href="{% url 'serviceDetails' %}">Service Details</a></li>
                                         </ul> -->
@@ -149,7 +158,7 @@
                                                 <li><a href="{% url 'productDetails' %}">Product Details</a></li>
                                             </ul>
                                         </li> -->
-                                        <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                                        <!-- <li><a href="{% url 'pricing' %}">Pricing</a></li> -->
                                         <li><a href="{% url 'faq' %}">FAQ</a></li>
                                         <!-- <li><a href="{% url 'notFound' %}">404</a></li> -->
                                     </ul>
@@ -262,9 +271,9 @@
                             <h4 class="widget-title text-underline">IT Company</h4>
                             <ul class="footer-nav list-style-dot">
                                 <li><a href="{% url 'about' %}">About Company</a></li>
-                                <li><a href="#">Latest News & Blog</a></li>
+                                <!-- <li><a href="#">Latest News & Blog</a></li>
                                 <li><a href="#">Professional Members</a></li>
-                                <li><a href="#">Our Achievment</a></li>
+                                <li><a href="#">Our Achievment</a></li> -->
                                 <li><a href="{% url 'teamDetails' %}">Company Journey</a></li>
                                 <li><a href="{% url 'teamDetails' %}">Meet Out Teams</a></li>
                             </ul>
@@ -274,12 +283,12 @@
                         <div class="widget footer-nav-widget mb-40">
                             <h4 class="widget-title text-underline">Our Support</h4>
                             <ul class="footer-nav list-style-dot">
-                                <li><a href="{% url 'pricing' %}">Premium Support</a></li>
+                                <li><a href="{% url 'serviceDetails' %}">Premium Support</a></li>
                                 <li><a href="{% url 'contact' %}">Need a Career ?</a></li>
                                 <li><a href="{% url 'faq' %}">Help & FAQ</a></li>
-                                <li><a href="{% url 'pricing' %}">Pricing and plans</a></li>
-                                <li><a href="#">Cookies Policy</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <!-- <li><a href="{% url 'pricing' %}">Pricing and plans</a></li> -->
+                                <!-- <li><a href="#">Cookies Policy</a></li>
+                                <li><a href="#">Privacy Policy</a></li> -->
                             </ul>
                         </div>
                     </div>
@@ -295,7 +304,7 @@
                     <div class="col-md-4">
                         <ul class="social-link float-md-right float-sm-none">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://twitter.com/techshofficial"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                             <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                         </ul>

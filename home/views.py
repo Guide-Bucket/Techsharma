@@ -57,7 +57,7 @@ def products(request):
 def project2(request):
     return render(request, "project-2.html")
 
-def service1(request):
+def service(request):
     return render(request, "service-1.html")
 
 def service2(request):
