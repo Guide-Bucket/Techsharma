@@ -1,10 +1,8 @@
-@charset "UTF-8";
 @font-face {
   font-family: "flaticon";
   src: url("./flaticon.ttf?baa8c57060bff04d24ac32a01c9c8c94") format("truetype"), url("./flaticon.woff?baa8c57060bff04d24ac32a01c9c8c94") format("woff"), url("./flaticon.woff2?baa8c57060bff04d24ac32a01c9c8c94") format("woff2"), url("./flaticon.eot?baa8c57060bff04d24ac32a01c9c8c94#iefix") format("embedded-opentype"), url("./flaticon.svg?baa8c57060bff04d24ac32a01c9c8c94#flaticon") format("svg");
 }
-
-i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   font-family: flaticon !important;
   font-style: normal;
   font-weight: normal !important;
@@ -16,297 +14,297 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 .flaticon-layers:before {
-  content: "";
+  content: "\f101";
 }
 
 .flaticon-project-management:before {
-  content: "";
+  content: "\f102";
 }
 
 .flaticon-puzzle-1:before {
-  content: "";
+  content: "\f103";
 }
 
 .flaticon-solution-1:before {
-  content: "";
+  content: "\f104";
 }
 
 .flaticon-cyber-security:before {
-  content: "";
+  content: "\f105";
 }
 
 .flaticon-app:before {
-  content: "";
+  content: "\f106";
 }
 
 .flaticon-internet-of-things:before {
-  content: "";
+  content: "\f107";
 }
 
 .flaticon-document:before {
-  content: "";
+  content: "\f108";
 }
 
 .flaticon-rating:before {
-  content: "";
+  content: "\f109";
 }
 
 .flaticon-dashboard-1:before {
-  content: "";
+  content: "\f10a";
 }
 
 .flaticon-trophy:before {
-  content: "";
+  content: "\f10b";
 }
 
 .flaticon-social-care:before {
-  content: "";
+  content: "\f10c";
 }
 
 .flaticon-compliant:before {
-  content: "";
+  content: "\f10d";
 }
 
 .flaticon-solution-2:before {
-  content: "";
+  content: "\f10e";
 }
 
 .flaticon-blockchain:before {
-  content: "";
+  content: "\f10f";
 }
 
 .flaticon-creative:before {
-  content: "";
+  content: "\f110";
 }
 
 .flaticon-graphic-tool:before {
-  content: "";
+  content: "\f111";
 }
 
 .flaticon-link:before {
-  content: "";
+  content: "\f112";
 }
 
 .flaticon-customer-service:before {
-  content: "";
+  content: "\f113";
 }
 
 .flaticon-quote:before {
-  content: "";
+  content: "\f114";
 }
 
 .flaticon-development:before {
-  content: "";
+  content: "\f115";
 }
 
 .flaticon-iso:before {
-  content: "";
+  content: "\f116";
 }
 
 .flaticon-web-design:before {
-  content: "";
+  content: "\f117";
 }
 
 .flaticon-web-design-1:before {
-  content: "";
+  content: "\f118";
 }
 
 .flaticon-mobile-app:before {
-  content: "";
+  content: "\f119";
 }
 
 .flaticon-cyber-security-1:before {
-  content: "";
+  content: "\f11a";
 }
 
 .flaticon-product:before {
-  content: "";
+  content: "\f11b";
 }
 
 .flaticon-target:before {
-  content: "";
+  content: "\f11c";
 }
 
 .flaticon-quotation:before {
-  content: "";
+  content: "\f11d";
 }
 
 .flaticon-customer-loyalty:before {
-  content: "";
+  content: "\f11e";
 }
 
 .flaticon-product-development:before {
-  content: "";
+  content: "\f11f";
 }
 
 .flaticon-cyber-security-2:before {
-  content: "";
+  content: "\f120";
 }
 
 .flaticon-padlock:before {
-  content: "";
+  content: "\f121";
 }
 
 .flaticon-cyber-security-3:before {
-  content: "";
+  content: "\f122";
 }
 
 .flaticon-cyber-security-4:before {
-  content: "";
+  content: "\f123";
 }
 
 .flaticon-help:before {
-  content: "";
+  content: "\f124";
 }
 
 .flaticon-technical-support:before {
-  content: "";
+  content: "\f125";
 }
 
 .flaticon-it:before {
-  content: "";
+  content: "\f126";
 }
 
 .flaticon-technical-support-1:before {
-  content: "";
+  content: "\f127";
 }
 
 .flaticon-growth:before {
-  content: "";
+  content: "\f128";
 }
 
 .flaticon-analysis:before {
-  content: "";
+  content: "\f129";
 }
 
 .flaticon-solution-3:before {
-  content: "";
+  content: "\f12a";
 }
 
 .flaticon-right-arrow:before {
-  content: "";
+  content: "\f12b";
 }
 
 .flaticon-shield:before {
-  content: "";
+  content: "\f12c";
 }
 
 .flaticon-support:before {
-  content: "";
+  content: "\f12d";
 }
 
 .flaticon-bonus:before {
-  content: "";
+  content: "\f12e";
 }
 
 .flaticon-map:before {
-  content: "";
+  content: "\f12f";
 }
 
 .flaticon-phone:before {
-  content: "";
+  content: "\f130";
 }
 
 .flaticon-email:before {
-  content: "";
+  content: "\f131";
 }
 
 .flaticon-customer-service-1:before {
-  content: "";
+  content: "\f132";
 }
 
 .flaticon-interactive:before {
-  content: "";
+  content: "\f133";
 }
 
 .flaticon-search:before {
-  content: "";
+  content: "\f134";
 }
 
 .flaticon-24-hours:before {
-  content: "";
+  content: "\f135";
 }
 
 .flaticon-online-chat:before {
-  content: "";
+  content: "\f136";
 }
 
 .flaticon-meeting:before {
-  content: "";
+  content: "\f137";
 }
 
 .flaticon-planning:before {
-  content: "";
+  content: "\f138";
 }
 
 .flaticon-dashboard-2:before {
-  content: "";
+  content: "\f139";
 }
 
 .flaticon-christmas-stars:before {
-  content: "";
+  content: "\f13a";
 }
 
 .flaticon-shining:before {
-  content: "";
+  content: "\f13b";
 }
 
 .flaticon-form:before {
-  content: "";
+  content: "\f13c";
 }
 
 .flaticon-lending:before {
-  content: "";
+  content: "\f13d";
 }
 
 .flaticon-transaction:before {
-  content: "";
+  content: "\f13e";
 }
 
 .flaticon-credit-card-payment:before {
-  content: "";
+  content: "\f13f";
 }
 
 .flaticon-payment-method:before {
-  content: "";
+  content: "\f140";
 }
 
 .flaticon-debit-card:before {
-  content: "";
+  content: "\f141";
 }
 
 .flaticon-wallet:before {
-  content: "";
+  content: "\f142";
 }
 
 .flaticon-dollar-symbol:before {
-  content: "";
+  content: "\f143";
 }
 
 .flaticon-wall-clock:before {
-  content: "";
+  content: "\f144";
 }
 
 .flaticon-cloud-computing:before {
-  content: "";
+  content: "\f145";
 }
 
 .flaticon-hearts:before {
-  content: "";
+  content: "\f146";
 }
 
 .flaticon-rating-1:before {
-  content: "";
+  content: "\f147";
 }
 
 .flaticon-curve:before {
-  content: "";
+  content: "\f148";
 }
 
 .flaticon-coding:before {
-  content: "";
+  content: "\f149";
 }
 
 .flaticon-email-1:before {
-  content: "";
+  content: "\f14a";
 }

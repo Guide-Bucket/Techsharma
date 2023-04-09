@@ -10,11 +10,11 @@ def index(request):
 def saveInfo(request):
     if request.method == "POST":
         fullName= request.POST.get('name')
-        phone = request.POST.get('Phone')
+        phone = request.POST.get('phone')
         message = request.POST.get('message')
         email = request.POST.get('email')
         website = request.POST.get('website')
-        Info=InfoClass(firstName=fullName,phone=phone,email=email,website=website,message=message)
+        Info=InfoClass(FirstName=fullName,Phone=phone,Email=email,Website=website,Message=message)
         Info.save()
         # infoModel=DB.users.insert_one({"firstName":FullName,"Phone":Phone,"email":Email,"website":Website,"description":Message})
     return render(request, "index.html")  

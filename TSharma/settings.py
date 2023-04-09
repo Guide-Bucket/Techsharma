@@ -85,7 +85,7 @@ DATABASES = {
             'ENGINE': 'djongo',
             'NAME': 'TechSharma',
             'CLIENT': {
-                'host': 'mongodb+srv://'+ urllib.parse.quote_plus(config('USER'))+ ':'+ urllib.parse.quote_plus(config('PASSWORD')) +'@techsharma.c1qscx8.mongodb.net/?retryWrites=true&w=majority'
+                'host': 'mongodb+srv://'+ urllib.parse.quote_plus(config('USER'))+ ':'+ urllib.parse.quote_plus(config('PASSWORD')) +'@techsharma.isqhx5q.mongodb.net/?retryWrites=true&w=majority'
             }  
         }
 }
