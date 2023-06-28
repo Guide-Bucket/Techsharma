@@ -30,6 +30,24 @@ def saveEmail(request):
 def about(request):
     return render(request, "about.html")
 
+def web(request):
+    return render(request, "web.html")
+
+def app(request):
+    return render(request, "mobileApp.html")
+
+def CloudComputing(request):
+    return render(request, "CloudComputing.html")
+
+def ITManaged(request):
+    return render(request, "ITManaged.html")
+
+def Seo(request):
+    return render(request, "Seo.html")
+
+def SoftwareDevelopment(request):
+    return render(request, "SoftwareDevelopment.html")
+
 def blog(request):
     return render(request, "blog-standard.html")
 

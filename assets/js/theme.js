@@ -17,7 +17,7 @@
     ## Back to top
     ## Counter
     ## WOW
-    ## Magnific-popup
+    ## magnificPopup
     ## Nice select
     ## Slick Slider
 -----------------------------------------------------------------------------------*/
@@ -111,7 +111,7 @@
         time: 4000
     });
 
-    //===== Magnific-popup js
+    //===== magnificPopup js
     $('.video-popup').magnificPopup({
         type: 'iframe',
         removalDelay: 300,

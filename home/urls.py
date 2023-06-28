@@ -20,5 +20,11 @@ urlpatterns = [path("", views.index, name="index"),
                path("team", views.team, name="team"),
                path("faq", views.faq, name="faq"),
                path("saveInfo", views.saveInfo, name="saveInfo"),
-               path("saveEmail", views.saveEmail, name="saveEmail")
+               path("saveEmail", views.saveEmail, name="saveEmail"),
+               path("webDevelopement", views.web, name="webDevelopement"),
+               path("app", views.app, name="app"),
+               path("CC", views.CloudComputing, name="CC"),
+               path("ITManaged", views.ITManaged, name="ITManaged"),
+               path("SoftwareDevelopment", views.SoftwareDevelopment, name="SoftwareDevelopment"),
+               path("Seo", views.Seo, name="Seo"),
                ]

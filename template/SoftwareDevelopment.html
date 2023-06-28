@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+{% endblock %}
+{% block CSS %}
+{% endblock %}
+{% block body %}
+<!--====== Start Hero Section ======-->
+<section class="hero-area">
+    <div class="breadcrumbs-wrapper bg_cover" style="background-image: url(https://images.unsplash.com/photo-1574790398664-0cb03682ed1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="page-title-text text-center">
+                        <h1 class="title">Software Development</h1>
+                        <ul class="breadcrumbs-link">
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li class="active">Software Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End Hero Section ======-->
+<!--====== Start About Section ======-->
+<section class="fancy-about fancy-about-five pt-130 pb-80">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="text-wrapper mb-50">
+                    <div class="experience-box">
+                        <div class="content mb-45">
+                            <h2>Software Development </h2>
+                            <blockquote>
+                                <p>Software development is a core service provided by IT companies, focusing on designing, developing, and implementing software solutions tailored to the specific needs of businesses. It involves the entire process of creating software applications, from gathering requirements and designing the system architecture to coding, testing, deployment, and ongoing maintenance. Here are the key aspects of software development.</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="counter-wrapper">
+                        <div class="row">
+                            <div class="col-md-4 col-6 counter-column">
+                                <div class="counter-item">
+                                    <h2 class="number"><span class="count">256</span>+</h2>
+                                    <p>Happy Customer</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 counter-column">
+                                <div class="counter-item">
+                                    <h2 class="number"><span class="count">75</span>+</h2>
+                                    <p>Star Work Reviews</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 counter-column">
+                                <div class="counter-item">
+                                    <h2 class="number"><span class="count">89</span>+</h2>
+                                    <p>Project Complate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="about-img mb-50">
+                    <img src="https://images.pexels.com/photos/3912477/pexels-photo-3912477.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End About Section ======-->
+<section class="features-area features-style-eight light-gray-bg pt-230 pb-90">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center mb-50">
+                    <span class="sub-title sub-title-bg blue-light-bg">what we do</span>
+                    <h2>Most Organize Core Features
+                        For Software Development Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="block-style-twenty animate-icon d-flex mb-30">
+                    <div class="icon">
+                        <i class="flaticon-help"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">Requirements Gathering and Analysis</h3>
+                        <p> Software development begins with understanding the client's requirements and objectives. IT professionals work closely with the client to gather detailed specifications, identify user needs, define functional and non-functional requirements, and analyze the feasibility of the project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="block-style-twenty animate-icon d-flex mb-30">
+                    <div class="icon">
+                        <i class="flaticon-technical-support"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline"> System Design and Architecture</h3>
+                        <p>Based on the requirements, the software development team designs the system architecture, including the overall structure, modules, and components of the software application. They define data models, workflows, and user interfaces, ensuring a well-organized and scalable solution.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="block-style-twenty animate-icon d-flex mb-30">
+                    <div class="icon">
+                        <i class="flaticon-it"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">Coding and Development</h3>
+                        <p>Software developers write the code based on the design and architecture specifications. They utilize programming languages, frameworks, and development tools to build the software application, implementing the desired features, functionality, and user experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="block-style-twenty animate-icon d-flex mb-30">
+                    <div class="icon">
+                        <i class="flaticon-technical-support-1"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">Testing and Quality Assurance</h3>
+                        <p>Software development involves rigorous testing to ensure that the application functions as intended, is free of bugs, and meets quality standards. Testing methodologies such as unit testing, integration testing, system testing, and user acceptance testing are performed to identify and resolve issues before deployment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="block-style-twenty animate-icon d-flex mb-30">
+                    <div class="icon">
+                        <i class="flaticon-it"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">Deployment and Implementation</h3>
+                        <p>Once the software application passes the testing phase, it is deployed to the production environment. This involves setting up servers, databases, and necessary infrastructure, configuring the software, and ensuring a smooth transition from the development environment to live usage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="block-style-twenty animate-icon d-flex mb-30">
+                    <div class="icon">
+                        <i class="flaticon-technical-support-1"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="text-underline">Maintenance and Support</h3>
+                        <p>After deployment, software development companies provide ongoing maintenance and support services. This includes monitoring the software for performance, resolving any issues or bugs that arise, applying updates and patches, and providing technical assistance to users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== Start CTA Section ======-->
+<section class="cta-area cta-style-three bg_cover pt-140 pb-140"
+    style="background-image: url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="cta-content-box text-center">
+                    <h2>Ready To Get Our
+                        Professional Software Development Services ?</h2>
+                    <ul class="button">
+                        <li><a href="{% url 'team' %}" class="main-btn btn-blue-light">Meet the team</a></li>
+                        <li><a href="{% url 'service' %}" class="main-btn btn-purple">Our services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End CTA Section ======-->
+<!--====== Start Contact Section ======-->
+<section class="contact-area contact-style-three bg_cover pt-130 pb-80"
+    style="background-image: url(static/images/bg/testimonial-bg-1.webp);">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="contact-section-box">
+                    <div class="section-title section-title-two mb-25">
+                        <span class="sub-title">Need help ?</span>
+                        <h2>Let’s Talk About IT
+                            Solutions</h2>
+                    </div>
+                    <p>In today's digital age, IT solutions are crucial for businesses and organizations of all sizes.
+                        From software and hardware to services and support, IT solutions help organizations streamline
+                        their operations, improve communication, and enhance security. But with so many options
+                        available, how do you choose the right IT solutions for your business?</p>
+                    <ul class="social-link">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="contact-wrapper">
+                    <form class="contact-form" action="{% url 'saveInfo' %}" method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="text" class="form_control" placeholder="Full Name Here" name="name"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="text" class="form_control" placeholder="Phone Number" name="phone"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="email" class="form_control" placeholder="Email Address" name="email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form_group">
+                                    <input type="url" class="form_control" placeholder="Website" name="website"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form_group">
+                                    <textarea class="form_control" placeholder="Write Message" name="message"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form_group">
+                                    <div class="col-lg-12">
+                                        <button class="main-btn btn-purple">Get free consultations</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--====== End Contact Section ======-->
+{% endblock %}
+<!--====== script ======-->
+{% block script %}
+
+{% endblock %}
