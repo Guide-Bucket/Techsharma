@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponseRedirect
 from home.models import InfoClass, EmailClass
+from meta.views import Meta
 import pymongo
 # from TSharma.settings import DB
 
@@ -28,7 +29,18 @@ def saveEmail(request):
     return render(request, "index.html") 
 
 def about(request):
-    return render(request, "about.html")
+    meta = Meta(
+    title="Sam's awesome ponies",
+    description='Awesome page about ponies',
+    keywords=['pony', 'ponies', 'awesome'],
+    extra_props = {
+        'viewport': 'width=device-width, initial-scale=1.0, minimum-scale=1.0'
+    },
+    extra_custom_props=[
+        ('http-equiv', 'Content-Type', 'text/html; charset=UTF-8'),
+    ]
+    )
+    return render(request, "about.html", meta=meta)
 
 def web(request):
     return render(request, "web.html")
