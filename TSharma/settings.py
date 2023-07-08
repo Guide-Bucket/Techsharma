@@ -42,8 +42,33 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
-    'home'
+    'meta',
+    # 'wagtail.contrib.forms',
+    # 'wagtail.contrib.redirects',
+    # 'wagtail.embeds',
+    # 'wagtail.sites',
+    # 'wagtail.users',
+    # 'wagtail.snippets',
+    # 'wagtail.documents',
+    # 'wagtail.images',
+    # 'wagtail.search',
+    # 'wagtail.admin',
+    # 'wagtail',
+    'home',
+
 ]
+
+# SEO meta settings 
+META_USE_OG_PROPERTIES=True
+META_USE_TWITTER_PROPERTIES=True
+META_USE_SCHEMAORG_PROPERTIES=True
+META_USE_TITLE_TAG=True
+META_SITE_DOMAIN="techsharma.com"
+META_SITE_NAME="TechSharma.com"
+META_SITE_PROTOCOL="https"
+META_DEFAULT_KEYWORDS=["TechSharma", "Tech Sharma", "IT agency", "Software Company"]
+META_INCLUDE_KEYWORDS=["TechSharma", "Tech Sharma", "IT agency", "Software Company"]
+META_TWITTER_SITE="@TechShOfficial"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,6 +79,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
 
 ROOT_URLCONF = 'TSharma.urls'
@@ -143,6 +169,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/'),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+WAGTAIL_SITE_NAME = 'Tech Sharma'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

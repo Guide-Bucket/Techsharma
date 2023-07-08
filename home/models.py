@@ -1,29 +1,29 @@
 from django.db import models
 from meta.models import ModelMeta
 
-# class SeoModel(ModelMeta, models.Model):
-#     Title  = models.CharField(max_length=20)
-#     description  = models.TextField()
-#     image = models.ImageField()
-#     ...
+class SeoModel(ModelMeta, models.Model):
+    title  = models.CharField(max_length=100)
+    description  = models.TextField()
+    keywords =models.TextField()
+    extra_props=models.JSONField(blank=True)
+    locale=models.CharField(max_length=15)
+    extra_custom_props=models.TextField(blank=True)
+    url = models.CharField(max_length=50, unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-#     _metadata = {
-#         'title': 'name',
-#         'description': 'abstract',
-#         'image': 'get_meta_image',
-#         ...
-#     }
-#     def get_meta_image(self):
-#         if self.image:
-#             return self.image.url
 
-# Create your models here.
-class InfoClass(models.Model):
+class InfoModel(models.Model):
     FirstName=models.CharField(max_length=30)
     Phone=models.CharField(max_length=15)
     Email=models.EmailField(max_length=30)
     Website=models.URLField()
     Message=models.TextField(max_length=500)
+    Url=models.CharField(max_length=20)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-class EmailClass(models.Model):
+class EmailModel(models.Model):
     email=models.EmailField(max_length=30)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)

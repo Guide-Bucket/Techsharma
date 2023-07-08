@@ -1,7 +1,6 @@
 from django.shortcuts import render, HttpResponseRedirect
-from home.models import InfoClass, EmailClass
-from meta.views import Meta
-import pymongo
+from home.models import InfoModel, EmailModel
+from .getMeta import getMeta
 # from TSharma.settings import DB
 
 
@@ -15,32 +14,21 @@ def saveInfo(request):
         message = request.POST.get('message')
         email = request.POST.get('email')
         website = request.POST.get('website')
-        Info=InfoClass(FirstName=fullName,Phone=phone,Email=email,Website=website,Message=message)
+        url = request.path
+        Info=InfoModel(FirstName=fullName,Phone=phone,Email=email,Website=website,Message=message,Url=url)
         Info.save()
-        # infoModel=DB.users.insert_one({"firstName":FullName,"Phone":Phone,"email":Email,"website":Website,"description":Message})
     return render(request, "index.html")  
 
 def saveEmail(request):
     if request.method=="POST":
         email=request.POST.get('email')
-        emailForm=EmailClass(email=email)
+        emailForm=EmailModel(email=email)
         emailForm.save()
-        # saveEmail=DB.emailForNewsLeater.insert_one({'email':email})
     return render(request, "index.html") 
 
 def about(request):
-    meta = Meta(
-    title="Sam's awesome ponies",
-    description='Awesome page about ponies',
-    keywords=['pony', 'ponies', 'awesome'],
-    extra_props = {
-        'viewport': 'width=device-width, initial-scale=1.0, minimum-scale=1.0'
-    },
-    extra_custom_props=[
-        ('http-equiv', 'Content-Type', 'text/html; charset=UTF-8'),
-    ]
-    )
-    return render(request, "about.html", meta=meta)
+    meta=getMeta(request.path)
+    return render(request, "about.html", {'meta':meta})
 
 def web(request):
     return render(request, "web.html")
