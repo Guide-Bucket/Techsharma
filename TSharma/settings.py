@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'meta',
     # 'wagtail.contrib.forms',
     # 'wagtail.contrib.redirects',
