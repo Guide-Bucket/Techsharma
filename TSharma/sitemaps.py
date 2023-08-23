@@ -11,10 +11,10 @@ class StaticSitemap(Sitemap):
 
     def items(self):
         # Return list of url names for views to include in sitemap
-        return [ 'about', 'notFound', 'career', 'service',
-                'serviceDetails', 'teamDetails', 'faq', 'saveInfo',
-                'saveEmail', 'webDevelopement', 'app', 'CC', 'ITManaged',
-                'SoftwareDevelopment', 'Seo',]
+        return [ 'about', 'notfound', 'career', 'service',
+                'servicedetails', 'teamdetails', 'faq', 'saveinfo',
+                'saveemail', 'webdevelopement', 'app', 'cloudcomputing', 'itmanaged',
+                'softwaredevelopment', 'seo',]
 
     def location(self, item):
         return reverse(item)

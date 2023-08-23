@@ -16,7 +16,7 @@ def saveInfo(request):
         email = request.POST.get('email')
         website = request.POST.get('website')
         url = request.path
-        Info=InfoModel(FirstName=fullName,Phone=phone,Email=email,Website=website,Message=message,Url=url)
+        Info=InfoModel(FullName=fullName,Phone=phone,Email=email,Website=website,Message=message,Url=url)
         Info.save()
     return render(request, "index.html")  
 

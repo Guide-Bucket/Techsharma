@@ -21,6 +21,7 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib.sitemaps.views import sitemap
+from django.views.generic.base import TemplateView
 from .sitemaps import StaticSitemap
 sitemaps = {'static': StaticSitemap}
 # from wagtail.admin import urls as wagtailadmin_urls
@@ -33,6 +34,7 @@ urlpatterns = [
     # path('documents/', include(wagtaildocs_urls)),
     # path('pages/', include(wagtail_urls)),
     path('', include('home.urls')),
+    path("robots.txt",TemplateView.as_view(template_name="main/robots.txt", content_type="text/plain")),  #add the robots.txt file
     path(
     "sitemap.xml",
     sitemap,

@@ -17,7 +17,7 @@ class SeoModel(ModelMeta, models.Model):
 
 
 class InfoModel(models.Model):
-    FirstName=models.CharField(max_length=30)
+    FullName=models.CharField(max_length=30)
     Phone=models.CharField(max_length=15)
     Email=models.EmailField(max_length=30)
     Website=models.URLField()
